@@ -42,11 +42,16 @@ Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para qu
   #### **¿Qué elementos importantes hay en tu web que necesitan almacenarse?**
   - **Usuarios**: información de los  profesores y estudiantes (datos personales, credenciales, roles).
   - **Tareas**: detalles de las actividades creadas, entregadas y puntuadas.
-  - **Insignias** y recompensas: logros de los  estudiantes.
+  - **Insignias y recompensas:** logros de los  estudiantes.
   - **Mensajes y comentarios**: comunicación entre usuarios.
-  - Progreso y estadísticas: datos sobre el rendimiento de los estudiantes.
-  - Historial de actividades: registro actividades hechas en la plataforma.
-  - Datos de seguridad: información para autenticación y protección .
+  - **Progreso y estadísticas**: datos sobre el rendimiento de los estudiantes.
+  - **Historial de actividades**: registro actividades hechas en la plataforma.
+  - **Datos de seguridad**: información para autenticación y protección .
+
+  
+
+
+  
 
 
 
