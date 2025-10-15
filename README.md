@@ -48,6 +48,15 @@ Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para qu
   - **Historial de actividades**: registro actividades hechas en la plataforma.
   - **Datos de seguridad**: información para autenticación y protección .
 
+| Tema de información almacena | ¿Porqué guardarla en la base de datos? |
+| ------------- | ------------- |
+| Datos de usuarios | Content Cell  |
+| Tareas y actividades  | Content Cell  |
+| Insignias y recompensas  | Content Cell  |
+| Mensajes y comentarios  | Content Cell  |
+| Progreso y estadísticas  | Content Cell  |
+| Historial de  | Content Cell  |
+
   
 
 
