@@ -20,7 +20,7 @@ Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para qu
   - Servicio en la nube o hosting (AWS, Google Cloud, etc.).
   - Certificado SSL para la seguridad de la página.
   - Herramientas de seguridad (firewalls).
-  - Plataformas para organizar el proyecto (Trello
+  - Plataformas para organizar el proyecto (Trello).
 
   # Informe Backend
 
