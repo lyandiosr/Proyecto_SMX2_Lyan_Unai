@@ -239,8 +239,73 @@ Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para qu
     Relación: 1 usuario — N registros de historial
 
 ## 5. Ejemplo de datos (simulación)
+#### Entidad: Usuario 
+- Nombre: Juan Pérez
+
+- Email: juanp@gmail.com
+
+- Rol: Estudiante
+
+- Fecha de registro: 10/09/2025
+
+#### Entidad: Profesor
+- Nombre: María López
+
+- Email: maria.lopez@colegio.edu
+
+- Asignatura: Matemáticas
+
+- Fecha de alta: 05/09/2025
+
+#### Entidad: Curso
+- Nombre del curso: Matemáticas 2º Bachillerato
+
+- Profesor asignado: María López
+
+- Fecha de inicio: 15/09/2025
+
+- Fecha de fin: 30/06/2026
+
+#### Entidad: Tarea
+- Título: Ejercicios de Álgebra
+
+- Descripción: Resolver los problemas del capítulo 3 del libro.
+
+- Fecha de creación: 20/09/2025
+
+- Fecha de entrega: 25/09/2025
+
+- Estado: Pendiente
 
 
+#### Entidad: Entrega
+- Estudiante: Juan Pérez
+
+- Tarea: Ejercicios de Álgebra
+
+- Fecha de entrega: 24/09/2025
+
+- Archivo: ejercicios_algebra_juanp.pdf
+
+- Calificación: 8/10
+
+
+#### Entidad: Insignia
+- Nombre: “Constancia”
+
+- Descripción: Se da por entregar todas las tareas a tiempo.
+
+- Estudiante: Juan Pérez
+
+- Fecha de obtención: 30/09/2025
+
+## 6. Reflexiones, dificultades y dudas que tienes sobre la base de datos
+#### ¿Qué partes te han resultado más difíciles de pensar?
+-Nos ha costado más el apartado de Identificación de entidades principales porque aún no tenemos del todo claro cómo será el proyecto y nos ha costado pensar todo esa parte, 
+también en el apartado de descripción general del proyecto web por lo que hemos dicho antes no tenemos del todo claro dónde queremos llegar con el proyecto tenemos algunas dudas aun con eso. 
+
+#### ¿Qué no tienes claro sobre la información que hay que guardar?
+-La verdad que lo tenemos todo bastante claro sobre esto .
 
 
 
