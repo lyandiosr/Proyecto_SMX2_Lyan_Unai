@@ -50,12 +50,202 @@ Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para qu
 
 | Tema de información almacena | ¿Porqué guardarla en la base de datos? |
 | ------------- | ------------- |
-| Datos de usuarios | Content Cell  |
-| Tareas y actividades  | Content Cell  |
-| Insignias y recompensas  | Content Cell  |
-| Mensajes y comentarios  | Content Cell  |
-| Progreso y estadísticas  | Content Cell  |
-| Historial de  | Content Cell  |
+| Datos de usuarios | Para identificar y diferenciar a profesores y estudiantes  |
+| Tareas y actividades  | Para gestionar, almacenar y permitir la entrega y puntuación de tareas|
+| Insignias y recompensas  | Para motivar a los estudiantes y llevar registro de sus logros  |
+| Mensajes y comentarios  | Para facilitar la comunicación entre usuarios  |
+| Progreso y estadísticas  | Para hacer seguimiento de lo que aprenden los  estudiantes  |
+| Historial de actividades  | Para seguridad y seguimiento de actividades hechas  |
+| Datos de seguridad  | Para proteger la información y controlar el acceso a la plataforma  |
+
+## 3. Datos que se deben guardar de cada entidad (atributos)
+
+#### Usuarios
+  ID_usuario → INT (autoincremental, clave primaria)
+
+  Nombre → VARCHAR(50)
+  
+  Apellidos → VARCHAR(50)
+  
+  Correo_electronico → VARCHAR(100)
+  
+  Contraseña → VARCHAR(255)
+  
+  Rol → ENUM('profesor','estudiante')
+  Fecha_registro → DATE
+  
+  Foto_perfil → VARCHAR(255)
+  
+  Estado → BOOLEAN
+
+#### Tareas:
+  ID_tarea → INT (autoincremental, clave primaria)
+  
+  Titulo → VARCHAR(100)
+  
+  Descripcion → TEXT
+  
+  Fecha_creacion → DATE
+  
+  Fecha_limite → DATE
+  
+  ID_profesor → INT (clave foránea)
+  
+  Estado → ENUM('pendiente','entregada','calificada')
+  
+  Puntuacion_maxima → INT
+  
+#### Entrega de tareas:
+  ID_entrega → INT (autoincremental, clave primaria)
+  
+  ID_tarea → INT (clave foránea)
+  
+  ID_estudiante → INT (clave foránea)
+  
+  Fecha_entrega → DATE
+  
+  Archivo_entregado → VARCHAR(255)
+  
+  Puntuacion_obtenida → INT
+  
+  Comentarios_profesor → TEXT
+  
+#### Insignias:
+  ID_insignia → INT (autoincremental, clave primaria)
+  
+  Nombre → VARCHAR(50)
+  
+  Descripcion → TEXT
+  
+  Icono → VARCHAR(255)
+  
+  Fecha_otorgada → DATE
+  
+  ID_estudiante → INT (clave foránea)
+  
+#### Mensajes:
+  ID_mensaje → INT (autoincremental, clave primaria)
+  
+  ID_emisor → INT (clave foránea)
+  
+  ID_receptor → INT (clave foránea)
+  
+  ID_tarea → INT (clave foránea, puede ser NULL)
+  
+  Texto → TEXT
+  
+  Fecha_hora → DATETIME
+
+#### Progreso y estadisticas:
+  ID_estadistica → INT (autoincremental, clave primaria)
+  
+  ID_estudiante → INT (clave foránea)
+  
+  ID_tarea → INT (clave foránea)
+  
+  Puntuacion_obtenida → INT
+  
+  Tiempo_dedicado → INT (en minutos)
+  
+  Fecha → DATE
+
+#### Historial de actividades:
+  ID_historial → INT (autoincremental, clave primaria)
+
+  ID_usuario → INT (clave foránea)
+
+  Accion → VARCHAR(100)
+
+  Fecha_hora → DATETIME
+
+  Detalles → TEXT
+
+#### Datos de seguridad:
+  ID_seguridad → INT (autoincremental, clave primaria)
+  
+  ID_usuario → INT (clave foránea)
+  
+  Token_sesion → VARCHAR(255)
+  
+  Fecha_creacion → DATETIME
+  
+  Fecha_expiracion → DATETIME
+  
+  IP_acceso → VARCHAR(45)
+
+  ## 4. Relaciones entre las entidades
+
+  #### 1. Usuarios ↔ Tareas
+    Un profesor (usuario con rol profesor) puede crear muchas tareas.
+    
+    Cada tarea es creada por un solo profesor.
+    
+    Relación: 1 profesor — N tareas
+    
+  #### 2. Usuarios ↔ Entregas de tareas
+    Un estudiante puede hacer muchas entregas (una por cada tarea asignada).
+    
+    Cada entrega pertenece a un solo estudiante.
+    
+    Relación: 1 estudiante — N entregas
+    
+  #### 3. Tareas ↔ Entregas de tareas
+    Cada tarea puede tener muchas entregas (de diferentes estudiantes).
+    
+    Cada entrega está asociada a una sola tarea.
+    
+    Relación: 1 tarea — N entregas
+    
+  #### 4. Usuarios ↔ Insignias
+    Un estudiante puede tener muchas insignias.
+    
+    Cada insignia está asociada a un solo estudiante.
+    
+    Relación: 1 estudiante — N insignias
+    
+  #### 5. Usuarios ↔ Mensajes
+    Un usuario puede enviar muchos mensajes.
+    
+    Un usuario puede recibir muchos mensajes.
+    
+    Relación: 1 usuario — N mensajes enviados
+    
+    Relación: 1 usuario — N mensajes recibidos
+    
+  #### 6. Tareas ↔ Mensajes
+    Un mensaje puede estar relacionado con una tarea (por ejemplo, conversación sobre una tarea).
+    
+    No todos los mensajes tienen que estar vinculados a una tarea.
+    
+    Relación: 1 tarea — N mensajes (0 o más mensajes)
+    
+  #### 7. Usuarios ↔ Progreso y estadísticas
+    Un estudiante tiene muchas entradas de progreso (por cada tarea o actividad).
+    
+    Cada registro de progreso pertenece a un solo estudiante.
+    
+    Relación: 1 estudiante — N registros de progreso
+    
+  #### 8. Tareas ↔ Progreso y estadísticas
+    Cada registro de progreso está asociado a una sola tarea.
+    
+    Una tarea puede tener muchos registros de progreso.
+    
+    Relación: 1 tarea — N registros de progreso
+    
+  #### 9. Usuarios ↔ Historial de actividades
+    Un usuario puede tener muchos registros en el historial (acciones que realiza en la plataforma).
+    
+    Relación: 1 usuario — N registros de historial
+
+## 5. Ejemplo de datos (simulación)
+
+
+
+
+
+  
+  
 
   
 
