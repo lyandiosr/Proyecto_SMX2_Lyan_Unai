@@ -1,4 +1,4 @@
-# Proyecto_SMX2_Lyan_Unai
+![Edutaks](Captura de pantalla 2025-10-21 100802.png)
 
 # Introducción
 
