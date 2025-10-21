@@ -1,9 +1,15 @@
 # Proyecto_SMX2_Lyan_Unai
 
-# Introducción
-
+<details>
+  <summary><h2> Introducció</h2></summary>
+  
 Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para que profesores y estudiantes puedan organizar sus actividades. No es solo un lugar para subir tareas, sino que también tiene herramientas que motivan, como insignias para que te animes y un tutor inteligente. La idea es mejorar la forma en que se enseña y se aprende. Edutask quiere dejar de ser solo una herramienta local para convertirse en una plataforma innovadora que motive a los estudiantes, ayude a los profesores con su trabajo y sea un ejemplo de aprendizaje digital en varios países. Esta plataforma está pensada principalmente para docentes y alumnos de cualquier nivel educativo.Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para crear la página web de la empresa y cómo configurarla. También el módulo de seguridad informática para que esta página web sea segura y confiable para los usuarios
 
+</details>
+
+<details>
+  <summary><h2> Briefing</h2></summary>
+  
 #### **Materiales Necesarios**  
 -**Físicos**:
   - Ordenadores con internet
@@ -21,8 +27,15 @@ Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para qu
   - Certificado SSL para la seguridad de la página.
   - Herramientas de seguridad (firewalls).
   - Plataformas para organizar el proyecto (Trello).
+</details>
 
-  # Informe Backend
+<details>
+  <summary><h2> Arquitectura del software</h2></summary>
+
+
+  <details>
+    <summary><strong> Backend</strong></summary>
+
 
   ## 1. Descripción general del proyecto web
   #### **¿De qué trata tu web? Explica brevemente el propósito de tu página web (por ejemplo: tienda online, blog, red social, catálogo, etc.).**
@@ -306,12 +319,15 @@ también en el apartado de descripción general del proyecto web por lo que hemo
 
 #### ¿Qué no tienes claro sobre la información que hay que guardar?
 -La verdad que lo tenemos todo bastante claro sobre esto .
-
+</details>
+</details>
 
 <details>
-  <summary><h2>🖼️ Mockup</h2></summary>
- # Mockup
- 
+  <summary><h2> Web</h2></summary>
+
+  <details>
+    <summary><strong> Mockup</strong></summary>
+
   #### 1. Equilibrio del diseño, colores, estructura.
   - La página está organizada de forma clara y ordenada. Las clases están puestas en cuadros distribuidos en dos filas y dos columnas, todo sea fácil de encontrar.
      A la izquierda hay una barra fija con iconos para moverse por la página (inicio, tareas, calendario, etc.). La parte del medio es para lo más importante que son  las clases que es lo que se tiene que ver mas.
@@ -325,9 +341,14 @@ también en el apartado de descripción general del proyecto web por lo que hemo
   [Mockup](https://www.canva.com/design/DAG1F7t7cgo/vUko967jFhBP_onj2v1dsA/edit?utm_content=DAG1F7t7cgo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 </details>
 
+  <details>
+    <summary><strong> Mapa de navegabilidad</strong></summary>
+    
 # Mapa Navegación
 
 [Mapa de navegación](https://www.figma.com/design/bCnEgSv1KONrkjPDBV6TZc/Mapa-navegaci%C3%B3n-Edutask?node-id=0-1&t=nvBzSE5BChtoyJh0-1)
+</details>
+
 
 
 
