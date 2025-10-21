@@ -1,4 +1,4 @@
-![Texto alternativo](Captura de pantalla 2025-10-21 100802.png)
+![Edutask]([Captura de pantalla 2025-10-21 100802.png](https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-10-21%20100802.png))
 
 
 # Introducción
