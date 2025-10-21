@@ -1,4 +1,4 @@
-![Edutaks](Captura de pantalla 2025-10-21 100802.png)
+![Texto alternativo](Captura de pantalla 2025-10-21 100802.png)
 
 
 # Introducción
