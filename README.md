@@ -1,7 +1,12 @@
+**# Edutask**
   ![Edutask](https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-10-21%20100802.png)
 
 <details>
-  <summary><h2> Introducció</h2></summary>
+  <summary><h2> Índice</h2></summary>
+  </details>
+  
+<details>
+  <summary><h2> Introducción</h2></summary>
   
 # Introducción
 
