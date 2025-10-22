@@ -1,22 +1,32 @@
-**# Edutask**
-  ![Edutask](https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-10-21%20100802.png)
+<h1 align="center"> EDUTASK</h1>
+
+<p align="center">
+  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-10-21%20100802.png" alt="Logo de Edutask" width="300">
+</p>
+
+<p align="center"><em>📚 Plataforma educativa para organizar clases, tareas y calendario académico.</em></p>
 
 <details>
   <summary><h2> Índice</h2></summary>
   </details>
+  
+--- 
   
 <details>
   <summary><h2> Introducción</h2></summary>
   
 # Introducción
 
-Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para que profesores y estudiantes puedan organizar sus actividades. No es solo un lugar para subir tareas, sino que también tiene herramientas que motivan, como insignias para que te animes y un tutor inteligente. La idea es mejorar la forma en que se enseña y se aprende. Edutask quiere dejar de ser solo una herramienta local para convertirse en una plataforma innovadora que motive a los estudiantes, ayude a los profesores con su trabajo y sea un ejemplo de aprendizaje digital en varios países. Esta plataforma está pensada principalmente para docentes y alumnos de cualquier nivel educativo.Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para crear la página web de la empresa y cómo configurarla. También el módulo de seguridad informática para que esta página web sea segura y confiable para los usuarios
+Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para que profesores y estudiantes puedan organizar sus actividades. No es solo un lugar para subir tareas, sino que también tiene herramientas que motivan, como insignias para que te animes y un tutor inteligente. La idea es mejorar la forma en que se enseña y se aprende. Edutask quiere dejar de ser solo una herramienta local para convertirse en una plataforma innovadora que motive a los estudiantes, ayude a los profesores con su trabajo y sea un ejemplo de aprendizaje digital en varios países. Esta plataforma está pensada principalmente para docentes y alumnos de cualquier nivel educativo.
 
 </details>
 
-<details>
+--- 
+
+<details>  
   <summary><h2> Briefing</h2></summary>
   
+Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para crear la página web de la empresa y cómo configurarla. También el módulo de seguridad informática para que esta página web sea segura y confiable para los usuarios. También la asignatura de servicios en red, ya que con ella podremos ofrecer todos los servicios a los usuarios y a la misma web.
 #### **Materiales Necesarios**  
 -**Físicos**:
   - Ordenadores con internet
@@ -36,9 +46,10 @@ Nuestro proyecto, llamado Edutask, es una plataforma web educativa hecha para qu
   - Plataformas para organizar el proyecto (Trello).
 </details>
 
+--- 
 <details>
   <summary><h2> Arquitectura del software</h2></summary>
-    
+
   <details>
     <summary><strong> Backend</strong></summary>
   
@@ -328,6 +339,29 @@ también en el apartado de descripción general del proyecto web por lo que hemo
 </details>
 </details>
 
+---
+<details>
+  <summary><h2> Tecnologías a utilizar</h2></summary>
+  </details>
+
+---
+<details>
+  <summary><h2> Red</h2></summary>
+  
+  <details>
+<summary><strong> Diagrama de la red</strong></summary>
+</details>
+
+      
+<details>
+<summary><strong> Mapa físico</strong></summary>
+</details>
+
+<details>
+<summary><strong> Mapa lógico</strong></summary>
+</details>
+
+ 
 <details>
   <summary><h2> Web</h2></summary>
 
