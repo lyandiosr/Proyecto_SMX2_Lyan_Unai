@@ -360,13 +360,15 @@ también en el apartado de descripción general del proyecto web por lo que hemo
 <details>
 <summary><strong> Mapa lógico</strong></summary>
 </details>
+</details>
 
+---
  
 <details>
   <summary><h2> Web</h2></summary>
 
-  <details>
-    <summary><strong> Mockup</strong></summary>
+<details>
+<summary><strong> Mockup</strong></summary>
     
  
   #### 1. Equilibrio del diseño, colores, estructura.
@@ -388,6 +390,44 @@ también en el apartado de descripción general del proyecto web por lo que hemo
 # Mapa Navegación
 
 [Mapa de navegación](https://www.figma.com/design/bCnEgSv1KONrkjPDBV6TZc/Mapa-navegaci%C3%B3n-Edutask?node-id=0-1&t=nvBzSE5BChtoyJh0-1)
+</details>
+</details>
+
+---
+<details>
+  <summary><h2> Servicios</h2></summary>
+  
+  <details>
+<summary><strong> DNS</strong></summary>
+</details>
+
+<details>
+<summary><strong> DHCP</strong></summary>
+</details>
+
+<details>
+<summary><strong> Apache</strong></summary>
+</details>
+
+  <details>
+<summary><strong> Firewall</strong></summary>
+</details>
+
+<details>
+<summary><strong> Copias de seguridad</strong></summary>
+</details>
+</details>
+
+---
+<details>
+  
+  <summary><h2> Conclusiones</h2></summary>
+</details>
+
+---
+<details>
+  
+  <summary><h2> Bibliografía</h2></summary>
 </details>
 
 
