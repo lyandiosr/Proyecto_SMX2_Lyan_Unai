@@ -381,6 +381,7 @@ también en el apartado de descripción general del proyecto web por lo que hemo
 
 #### 3. Componentes de interfaz (botones, enlaces...).
 - La página tiene botones como “Entrar” y “Crear Clase” que son fáciles de ver y usar. También hay iconos en la barra lateral que ayudan a saber para qué sirve cada sección sin tener que leer mucho. Cada clase tiene una estrellita para marcarla como favorita, lo que      añade una función extra sin complicar el diseño.
+  
   [Mockup](https://www.canva.com/design/DAG1F7t7cgo/vUko967jFhBP_onj2v1dsA/edit?utm_content=DAG1F7t7cgo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 </details>
 
