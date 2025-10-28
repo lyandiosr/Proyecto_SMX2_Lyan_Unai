@@ -9,23 +9,23 @@
 <details>
   <summary><h2> Índice</h2></summary>
 
-### **-1. Introducción**
-### **-2. Briefing**
-### **-3. Arquitectura del software**
-#### -3.1 Backend
-### **-4. Tecnologías a utilizar**
-### **-5. Red**
-### **-6. Web**
+## **1. Introducción**
+## **2. Briefing**
+## **3. Arquitectura del software**
+#### - 3.1 Backend
+## **4. Tecnologías a utilizar**
+## **5. Red**
+## **6. Web**
 #### -6.1 Mockup
 #### -6.2 Mapa de navegabilidad
-### **-7.Servicios**
+## **7.Servicios**
 #### -7.1 DNS
 #### -7.2 DHCP
 #### -7.3 Apache
 #### -7.4 Firewall
 #### -7.5 Copias de seguridad
-### **-8. Conclusiones**
-### **-9. Bibliografía**
+## **8. Conclusiones**
+## **9. Bibliografía**
 
   
   </details>
