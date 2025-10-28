@@ -111,22 +111,22 @@ Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para 
 ## 3. Datos que se deben guardar de cada entidad (atributos)
 
 #### Usuarios
-  ID_usuario → INT (autoincremental, clave primaria)
+ID_usuario → INT (autoincremental, clave primaria)
 
-  Nombre → VARCHAR(50)
+Nombre → VARCHAR(50)
   
-  Apellidos → VARCHAR(50)
+Apellidos → VARCHAR(50)
   
-  Correo_electronico → VARCHAR(100)
+Correo_electronico → VARCHAR(100)
   
-  Contraseña → VARCHAR(255)
+Contraseña → VARCHAR(255)
   
-  Rol → ENUM('profesor','estudiante')
-  Fecha_registro → DATE
+Rol → ENUM('profesor','estudiante')
+Fecha_registro → DATE
   
-  Foto_perfil → VARCHAR(255)
+Foto_perfil → VARCHAR(255)
   
-  Estado → BOOLEAN
+Estado → BOOLEAN
 
 #### Tareas:
   ID_tarea → INT (autoincremental, clave primaria)
@@ -226,67 +226,67 @@ Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para 
   ## 4. Relaciones entre las entidades
 
   #### 1. Usuarios ↔ Tareas
-    Un profesor (usuario con rol profesor) puede crear muchas tareas.
+Un profesor (usuario con rol profesor) puede crear muchas tareas.
     
-    Cada tarea es creada por un solo profesor.
+Cada tarea es creada por un solo profesor.
     
-    Relación: 1 profesor — N tareas
+Relación: 1 profesor — N tareas
     
   #### 2. Usuarios ↔ Entregas de tareas
-    Un estudiante puede hacer muchas entregas (una por cada tarea asignada).
+Un estudiante puede hacer muchas entregas (una por cada tarea asignada).
     
-    Cada entrega pertenece a un solo estudiante.
+Cada entrega pertenece a un solo estudiante.
     
-    Relación: 1 estudiante — N entregas
+Relación: 1 estudiante — N entregas
     
   #### 3. Tareas ↔ Entregas de tareas
-    Cada tarea puede tener muchas entregas (de diferentes estudiantes).
+Cada tarea puede tener muchas entregas (de diferentes estudiantes).
     
-    Cada entrega está asociada a una sola tarea.
+Cada entrega está asociada a una sola tarea.
     
-    Relación: 1 tarea — N entregas
+Relación: 1 tarea — N entregas
     
   #### 4. Usuarios ↔ Insignias
-    Un estudiante puede tener muchas insignias.
+Un estudiante puede tener muchas insignias.
     
-    Cada insignia está asociada a un solo estudiante.
+Cada insignia está asociada a un solo estudiante.
     
-    Relación: 1 estudiante — N insignias
+Relación: 1 estudiante — N insignias
     
   #### 5. Usuarios ↔ Mensajes
-    Un usuario puede enviar muchos mensajes.
+Un usuario puede enviar muchos mensajes.
     
-    Un usuario puede recibir muchos mensajes.
+Un usuario puede recibir muchos mensajes.
     
-    Relación: 1 usuario — N mensajes enviados
+Relación: 1 usuario — N mensajes enviados
     
     Relación: 1 usuario — N mensajes recibidos
     
   #### 6. Tareas ↔ Mensajes
-    Un mensaje puede estar relacionado con una tarea (por ejemplo, conversación sobre una tarea).
+Un mensaje puede estar relacionado con una tarea (por ejemplo, conversación sobre una tarea).
     
-    No todos los mensajes tienen que estar vinculados a una tarea.
+No todos los mensajes tienen que estar vinculados a una tarea.
     
-    Relación: 1 tarea — N mensajes (0 o más mensajes)
+Relación: 1 tarea — N mensajes (0 o más mensajes)
     
   #### 7. Usuarios ↔ Progreso y estadísticas
-    Un estudiante tiene muchas entradas de progreso (por cada tarea o actividad).
+Un estudiante tiene muchas entradas de progreso (por cada tarea o actividad).
     
-    Cada registro de progreso pertenece a un solo estudiante.
+Cada registro de progreso pertenece a un solo estudiante.
     
-    Relación: 1 estudiante — N registros de progreso
+Relación: 1 estudiante — N registros de progreso
     
   #### 8. Tareas ↔ Progreso y estadísticas
-    Cada registro de progreso está asociado a una sola tarea.
+Cada registro de progreso está asociado a una sola tarea.
     
-    Una tarea puede tener muchos registros de progreso.
+Una tarea puede tener muchos registros de progreso.
     
-    Relación: 1 tarea — N registros de progreso
+Relación: 1 tarea — N registros de progreso
     
   #### 9. Usuarios ↔ Historial de actividades
-    Un usuario puede tener muchos registros en el historial (acciones que realiza en la plataforma).
+Un usuario puede tener muchos registros en el historial (acciones que realiza en la plataforma).
     
-    Relación: 1 usuario — N registros de historial
+Relación: 1 usuario — N registros de historial
 
 ## 5. Ejemplo de datos (simulación)
 #### Entidad: Usuario 
@@ -351,11 +351,11 @@ Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para 
 
 ## 6. Reflexiones, dificultades y dudas que tienes sobre la base de datos
 #### ¿Qué partes te han resultado más difíciles de pensar?
--Nos ha costado más el apartado de Identificación de entidades principales porque aún no tenemos del todo claro cómo será el proyecto y nos ha costado pensar todo esa parte, 
+Nos ha costado más el apartado de Identificación de entidades principales porque aún no tenemos del todo claro cómo será el proyecto y nos ha costado pensar todo esa parte, 
 también en el apartado de descripción general del proyecto web por lo que hemos dicho antes no tenemos del todo claro dónde queremos llegar con el proyecto tenemos algunas dudas aun con eso. 
 
 #### ¿Qué no tienes claro sobre la información que hay que guardar?
--La verdad que lo tenemos todo bastante claro sobre esto .
+La verdad que lo tenemos todo bastante claro sobre esto .
 </details>
 </details>
 
@@ -392,15 +392,15 @@ también en el apartado de descripción general del proyecto web por lo que hemo
     
  
   #### 1. Equilibrio del diseño, colores, estructura.
-  - La página está organizada de forma clara y ordenada. Las clases están puestas en cuadros distribuidos en dos filas y dos columnas, todo sea fácil de encontrar.
-     A la izquierda hay una barra fija con iconos para moverse por la página (inicio, tareas, calendario, etc.). La parte del medio es para lo más importante que son  las clases que es lo que se tiene que ver mas.
+La página está organizada de forma clara y ordenada. Las clases están puestas en cuadros distribuidos en dos filas y dos columnas, todo sea fácil de encontrar.
+A la izquierda hay una barra fija con iconos para moverse por la página (inicio, tareas, calendario, etc.). La parte del medio es para lo más importante que son  las clases que es lo que se tiene que ver mas.
 
 #### 2. Colores y tipografía.
-- Cada asignatura tiene un color diferente (azul, naranja, rojo y verde), lo que ayuda a reconocerlas rápido y hace que la página se vea más clara. El fondo blanco hace que los colores resalten más.
-   La letra es sencilla y moderna, hace que se vea ordenado.
+Cada asignatura tiene un color diferente (azul, naranja, rojo y verde), lo que ayuda a reconocerlas rápido y hace que la página se vea más clara. El fondo blanco hace que los colores resalten más.
+La letra es sencilla y moderna, hace que se vea ordenado.
 
 #### 3. Componentes de interfaz (botones, enlaces...).
-- La página tiene botones como “Entrar” y “Crear Clase” que son fáciles de ver y usar. También hay iconos en la barra lateral que ayudan a saber para qué sirve cada sección sin tener que leer mucho. Cada clase tiene una estrellita para marcarla como favorita, lo que      añade una función extra sin complicar el diseño.
+La página tiene botones como “Entrar” y “Crear Clase” que son fáciles de ver y usar. También hay iconos en la barra lateral que ayudan a saber para qué sirve cada sección sin tener que leer mucho. Cada clase tiene una estrellita para marcarla como favorita, lo que      añade una función extra sin complicar el diseño.
   
   [Mockup](https://www.canva.com/design/DAG1F7t7cgo/vUko967jFhBP_onj2v1dsA/edit?utm_content=DAG1F7t7cgo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 </details>
@@ -409,6 +409,12 @@ también en el apartado de descripción general del proyecto web por lo que hemo
     <summary><strong> Mapa de navegabilidad</strong></summary>
 
 # Mapa Navegación
+El mapa de navegabilidad muestra cómo se organiza la estructura de la página web Edutask y los caminos que puede seguir el usuario dentro de ella. Desde la pantalla inicial de inicio de sesión, el usuario puede acceder a las distintas secciones según su rol (profesor o estudiante).
+
+En el centro del mapa se encuentra la página principal, donde se muestran las clases, y desde ahí se puede acceder fácilmente al resto de apartados: Tareas, Calendario, Insignias, Profesor Inteligente y Configuración.
+Cada flecha del mapa indica las conexiones entre pantallas y cómo se pasa de una función a otra, lo que ayuda a entender el recorrido completo dentro de la web.
+
+Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tanto profesores como estudiantes pueden orientarse sin dificultad, accediendo de forma rápida a sus clases, actividades y herramientas principales.
 
 [Mapa de navegación](https://www.figma.com/design/bCnEgSv1KONrkjPDBV6TZc/Mapa-navegaci%C3%B3n-Edutask?node-id=0-1&t=nvBzSE5BChtoyJh0-1)
 </details>
