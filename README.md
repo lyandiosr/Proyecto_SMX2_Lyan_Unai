@@ -390,6 +390,9 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 <details>
 <summary><strong> Mockup</strong></summary>
     
+
+
+
  
  
 La página está organizada de forma clara y ordenada. Las clases están puestas en cuadros distribuidos en dos filas y dos columnas, todo sea fácil de encontrar.
@@ -404,6 +407,10 @@ La letra es sencilla y moderna, hace que se vea ordenado. La página tiene boton
 
   <details>
     <summary><strong> Mapa de navegabilidad</strong></summary>
+
+
+
+
 
 
 El mapa de navegabilidad muestra cómo se organiza la estructura de la página web Edutask y los caminos que puede seguir el usuario dentro de ella. Desde la pantalla inicial de inicio de sesión, el usuario puede acceder a las distintas secciones según su rol (profesor o estudiante).
