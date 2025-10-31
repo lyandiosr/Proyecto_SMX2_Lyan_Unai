@@ -391,16 +391,11 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 <summary><strong> Mockup</strong></summary>
     
  
-  #### 1. Equilibrio del diseño, colores, estructura.
+ 
 La página está organizada de forma clara y ordenada. Las clases están puestas en cuadros distribuidos en dos filas y dos columnas, todo sea fácil de encontrar.
 A la izquierda hay una barra fija con iconos para moverse por la página (inicio, tareas, calendario, etc.). La parte del medio es para lo más importante que son  las clases que es lo que se tiene que ver mas.
-
-#### 2. Colores y tipografía.
 Cada asignatura tiene un color diferente (azul, naranja, rojo y verde), lo que ayuda a reconocerlas rápido y hace que la página se vea más clara. El fondo blanco hace que los colores resalten más.
-La letra es sencilla y moderna, hace que se vea ordenado.
-
-#### 3. Componentes de interfaz (botones, enlaces...).
-La página tiene botones como “Entrar” y “Crear Clase” que son fáciles de ver y usar. También hay iconos en la barra lateral que ayudan a saber para qué sirve cada sección sin tener que leer mucho. Cada clase tiene una estrellita para marcarla como favorita, lo que      añade una función extra sin complicar el diseño.
+La letra es sencilla y moderna, hace que se vea ordenado. La página tiene botones como “Entrar” y “Crear Clase” que son fáciles de ver y usar. También hay iconos en la barra lateral que ayudan a saber para qué sirve cada sección sin tener que leer mucho. Cada clase tiene una estrellita para marcarla como favorita, lo que añade una función extra sin complicar el diseño.
 
 
   
@@ -410,7 +405,7 @@ La página tiene botones como “Entrar” y “Crear Clase” que son fáciles 
   <details>
     <summary><strong> Mapa de navegabilidad</strong></summary>
 
-# Mapa Navegación
+
 El mapa de navegabilidad muestra cómo se organiza la estructura de la página web Edutask y los caminos que puede seguir el usuario dentro de ella. Desde la pantalla inicial de inicio de sesión, el usuario puede acceder a las distintas secciones según su rol (profesor o estudiante).
 
 En el centro del mapa se encuentra la página principal, donde se muestran las clases, y desde ahí se puede acceder fácilmente al resto de apartados: Tareas, Calendario, Insignias, Profesor Inteligente y Configuración.
