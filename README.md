@@ -406,7 +406,7 @@ La letra es sencilla y moderna, hace que se vea ordenado. La página tiene boton
 <p align="center">
   <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-05%20091436.png" alt="Página Inicio" width="500">
 </p>
-  
+  - Esta es la pantalla de inicio de nuestra web, como se puede ver en la parte de arriba tenemos nuestro logo, debajo de este se encuetra nuestro eslogan con un color de letra gris con tipografia open sans, debajo del eslogan tenemos un recuadro para iniciar sesión donde hay que poner el correo electrónico y la contraseña. También hay una opción por si se te ha olvidado la contraseña que explicaremos esa pantalla a continuacion, debajo de eso tenemos una opcion que te pregunta un rol de estudiante o professor donde tendras que marcarla.
 </details>
 
   <details>
