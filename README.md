@@ -403,15 +403,20 @@ La letra es sencilla y moderna, hace que se vea ordenado. La página tiene boton
 
   
   [Mockup](https://www.canva.com/design/DAG1F7t7cgo/vUko967jFhBP_onj2v1dsA/edit?utm_content=DAG1F7t7cgo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+  
 <p align="center">
   <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-05%20091436.png" alt="Página Inicio" width="500">
 </p>
   - Esta es la pantalla de inicio de nuestra web. En la parte superior se encuentra nuestro logotipo, y justo debajo aparece nuestro eslogan  con tipografía Open Sans y color de letra gris.
 Debajo del eslogan hay un recuadro para iniciar sesión, donde el usuario debe introducir su correo electrónico y contraseña. También se incluye una opción para recuperar la contraseña, cuya pantalla explicaremos a continuación.
 Finalmente, debajo de todo, hay una opción para seleccionar el rol de estudiante o profesor, que el usuario deberá marcar antes de continuar.
+
 <p align="center">
 <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-05%20094302.png" alt="Página recuperar contraseña" width="500">
   </p>
+  -En esta pantalla, es para aquellos usuarios que quieran acceder a nuestra web y no se acuerden de su contraseña. En esta página la podrán recuperar. En la parte de arriba podemos ver que aparece el logo en grande y, como antes, debajo nuestro eslogan de color gris. Luego hay un recuadro que pone “Recuperar contraseña” en azul con tipografía Open Sans. Debajo de eso te pide que pongas tu correo electrónico para que luego haya un botón que pone “Enviar código”, que también está en color azul pero más claro. Esto hace que te llegue un código al correo que has puesto. Después hay un texto que te dice que introduzcas el código que te han enviado, y está en color gris con la tipografía Open Sans. Después de este paso, dice que pongas tu nueva contraseña y luego que la vuelvas a introducir para ya poder iniciar sesión con el botón de la parte de abajo, que está en color azul y la letra de dentro en color blanco para que resalte.
+
+  
 </details>
 
   <details>
