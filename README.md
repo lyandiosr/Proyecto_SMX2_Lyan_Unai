@@ -422,7 +422,7 @@ Finalmente, debajo de todo, hay una opción para seleccionar el rol de estudiant
   - Esta es la página principal que ve el usuario después de iniciar sesión. En el centro aparecen las clases organizadas en cuadrados, cada una con un color diferente para reconocerlas rápidamente. Las tarjetas muestran el nombre de la asignatura, el curso y un botón   para acceder. También incluyen una estrella para marcar clases como favoritas. A la izquierda aparece una barra lateral fija con los apartados más importantes: inicio, tareas, calendario, insignias y configuración. Esta barra permite moverse por la web de forma fácil y directa.
 
  <p align="center">
-<img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-05%20101849.png" alt="Página Tareas" width="500">
+<img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-05%20102754.png" alt="Página Tareas" width="500">
   </p> 
 - En esta página se muestran todas las tareas que el estudiante tiene en las distintas clases. La parte superior tiene un buscador y botones de filtro (todas, pendientes, entregadas…), y hace mas facil encontrar una actividad concreta.
  Las tareas aparecen en forma de lista, con columnas que indican el nombre de la tarea, la asignatura, la fecha límite y el estado (pendiente, entregado o retrasado). Esto ayuda a organizarse mejor y ver rápidamente qué tareas son más urgentes. 
