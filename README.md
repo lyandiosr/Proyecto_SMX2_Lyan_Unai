@@ -425,7 +425,7 @@ Finalmente, debajo de todo, hay una opción para seleccionar el rol de estudiant
 <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-05%20102754.png" alt="Página Tareas" width="500">
   </p> 
 - En esta página se muestran todas las tareas que el estudiante tiene en las distintas clases. La parte superior tiene un buscador y botones de filtro (todas, pendientes, entregadas…), y hace mas facil encontrar una actividad concreta.
- Las tareas aparecen en forma de lista, con columnas que indican el nombre de la tarea, la asignatura, la fecha límite y el estado (pendiente, entregado o retrasado). Esto ayuda a organizarse mejor y ver rápidamente qué tareas son más urgentes. 
+ Las tareas aparecen en forma de lista, con columnas que indican el nombre de la tarea, la asignatura, la fecha límite y el estado (pendiente, entregado o retrasado). Esto ayuda a organizarse mejor y ver rápidamente qué tareas son más urgentes. Como tambien se puede ver hay un boton para crear tareas por si lo necesitas..
 </details>
 
   <details>
