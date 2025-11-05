@@ -395,7 +395,7 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 
  
  
-La página está organizada de forma clara y ordenada. Las clases están puestas en cuadros distribuidos en dos filas y dos columnas, todo sea fácil de encontrar.
+La página está organizada de forma clara y ordenada el color principal de la web son colores claros como el blanco y el azul , en nuestra web la tipografia es open sans. Las clases están puestas en cuadros distribuidos en dos filas y dos columnas, todo sea fácil de encontrar.
 A la izquierda hay una barra fija con iconos para moverse por la página (inicio, tareas, calendario, etc.). La parte del medio es para lo más importante que son  las clases que es lo que se tiene que ver mas.
 Cada asignatura tiene un color diferente (azul, naranja, rojo y verde), lo que ayuda a reconocerlas rápido y hace que la página se vea más clara. El fondo blanco hace que los colores resalten más.
 La letra es sencilla y moderna, hace que se vea ordenado. La página tiene botones como “Entrar” y “Crear Clase” que son fáciles de ver y usar. También hay iconos en la barra lateral que ayudan a saber para qué sirve cada sección sin tener que leer mucho. Cada clase tiene una estrellita para marcarla como favorita, lo que añade una función extra sin complicar el diseño.
@@ -406,7 +406,9 @@ La letra es sencilla y moderna, hace que se vea ordenado. La página tiene boton
 <p align="center">
   <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-05%20091436.png" alt="Página Inicio" width="500">
 </p>
-  - Esta es la pantalla de inicio de nuestra web, como se puede ver en la parte de arriba tenemos nuestro logo, debajo de este se encuetra nuestro eslogan con un color de letra gris con tipografia open sans, debajo del eslogan tenemos un recuadro para iniciar sesión donde hay que poner el correo electrónico y la contraseña. También hay una opción por si se te ha olvidado la contraseña que explicaremos esa pantalla a continuacion, debajo de eso tenemos una opcion que te pregunta un rol de estudiante o professor donde tendras que marcarla.
+  - Esta es la pantalla de inicio de nuestra web. En la parte superior se encuentra nuestro logotipo, y justo debajo aparece nuestro eslogan  con tipografía Open Sans y color de letra gris.
+Debajo del eslogan hay un recuadro para iniciar sesión, donde el usuario debe introducir su correo electrónico y contraseña. También se incluye una opción para recuperar la contraseña, cuya pantalla explicaremos a continuación.
+Finalmente, debajo de todo, hay una opción para seleccionar el rol de estudiante o profesor, que el usuario deberá marcar antes de continuar.
 </details>
 
   <details>
