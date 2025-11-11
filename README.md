@@ -370,6 +370,9 @@ La verdad que lo tenemos todo bastante claro sobre esto .
   
   <details>
 <summary><strong> Diagrama de la red</strong></summary>
+    <p align="center">
+<img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-11%20104109.png" alt="Diagrama de la red" width="700">
+  </p>
 </details>
 
       
