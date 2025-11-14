@@ -308,6 +308,7 @@ Un usuario puede tener muchos registros en el historial (acciones que realiza en
     
 Relación: 1 usuario — N registros de historial
 
+
 ## 5. Ejemplo de datos (simulación)
 #### Entidad: Usuario 
 - Nombre: Juan Pérez
@@ -383,7 +384,11 @@ La verdad que lo tenemos todo bastante claro sobre esto .
   <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-14%20102226.png" alt="Logo de Edutask" width="500">
 </p>
   - Este es diseño de la base de datos de EduTask hemos organizado la información de manera clara y funcional. Hemos creado tablas para profesores, usuarios, insignias, clases, tareas y entregas, definiendo sus relaciones para que los datos se conecten bien. Aunque este diseño  no es definitivo.
+   <p align="center">
+  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Base%20de%20datos%20.png" alt="Logo de Edutask" width="500">
+</p>
  </details>
+
 <details>
 <summary><strong> Arquitectura del sistema</strong></summary>
   
@@ -418,6 +423,7 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 
   - Este es nuestro diagrama de red de Edutask, donde se muestra cómo se organiza toda la infraestructura del proyecto. Desde la entrada del dominio a través de Cloudflare hasta la red interna gestionada por pfSense, se distribuyen los diferentes servicios importantes como el servidor web, la base de datos, el sistema de almacenamiento con TrueNAS y el servidor DNS con Pi-hole.
 </details>
+
 
       
 <details>
