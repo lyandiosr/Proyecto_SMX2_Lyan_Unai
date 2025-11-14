@@ -415,6 +415,8 @@ La verdad que lo tenemos todo bastante claro sobre esto .
     <p align="center">
 <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-11%20104109.png" alt="Diagrama de la red" width="700">
   </p>
+
+  - Este es nuestro diagrama de red de Edutask, donde se muestra cómo se organiza toda la infraestructura del proyecto. Desde la entrada del dominio a través de Cloudflare hasta la red interna gestionada por pfSense, se distribuyen los diferentes servicios importantes como el servidor web, la base de datos, el sistema de almacenamiento con TrueNAS y el servidor DNS con Pi-hole.
 </details>
 
       
