@@ -379,6 +379,9 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 </details>
 <details>
 <summary><strong> Diseño Base de datos</strong></summary>
+  <p align="center">
+  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-14%20102226.png" alt="Logo de Edutask" width="500">
+</p>
  </details>
 <details>
 <summary><strong> Arquitectura del sistema</strong></summary>
