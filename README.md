@@ -377,6 +377,21 @@ también en el apartado de descripción general del proyecto web por lo que hemo
 #### ¿Qué no tienes claro sobre la información que hay que guardar?
 La verdad que lo tenemos todo bastante claro sobre esto .
 </details>
+<details>
+<summary><strong> Arquitectura del sistema</strong></summary>
+  
+  | Componente del sistema            | Tecnología / Framework                              | Versión          | Puerto                 | Descripción de uso o requisitos                                                                 | Documentación / Info |
+|----------------------------------|------------------------------------------------------|------------------|------------------------|-------------------------------------------------------------------------------------------------|-----------------------|
+| **Hardware**                      | VPS (4 vCPU, 8GB RAM, 200GB SSD)                    | —                | —                      | Recursos necesarios para alojar backend, base de datos y servidor web de Edutask.               | https://digitalocean.com |
+| **Sistema operativo**            | Ubuntu Server (libre)                               | 22.04 LTS        | —                      | SO libre y estable para servidores web. Corre Node.js, Nginx y servicios backend.               | https://ubuntu.com |
+| **Interfaz de usuario (Frontend)** | HTML5, CSS3, JavaScript, React.js                    | —                | 3000 (desarrollo)      | Estructura visual del sistema: login, panel, tareas, configuración.                             | https://react.dev |
+| **Lógica de negocio (Backend)** | Node.js + Express.js                                 | Node 18 / Exp 4  | 4000                   | Procesa login, usuarios, tareas, cursos; maneja roles y peticiones API.                         | https://expressjs.com |
+| **Servidor web**                 | Nginx                                                | 1.24 (Ubuntu)    | 80 / 443               | Publica el frontend y actúa como reverse proxy hacia el backend.                                | https://nginx.org |
+| **Base de datos**                | MySQL                                               | 8.0              | 3306                   | Guarda usuarios, roles, cursos, tareas, entregas y calificaciones.                               | https://dev.mysql.com/doc |
+| **Sistema gestor de BD**        | phpMyAdmin                                           | 5.x              | 8080 / 80              | Administración visual: creación de tablas, consultas, backups y usuarios.                       | https://phpmyadmin.net |
+| **Servicios de APIs**           | API REST                                            | —                | 4000 (backend)         | Comunicación entre frontend y backend: login, registro, tareas, entregas, cursos.               | https://restfulapi.net |
+
+</details>
 </details>
 
 ---
