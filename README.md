@@ -386,7 +386,11 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 </details>
 
 ---
- 
+<details>
+  <summary><h2> Organización</h2></summary>
+</details>
+
+---
 <details>
   <summary><h2> Web</h2></summary>
 
