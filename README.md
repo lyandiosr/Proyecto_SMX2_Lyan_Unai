@@ -382,6 +382,7 @@ La verdad que lo tenemos todo bastante claro sobre esto .
   <p align="center">
   <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-14%20102226.png" alt="Logo de Edutask" width="500">
 </p>
+  - Este es diseño de la base de datos de EduTask hemos organizado la información de manera clara y funcional. Hemos creado tablas para profesores, usuarios, insignias, clases, tareas y entregas, definiendo sus relaciones para que los datos se conecten bien. Aunque este diseño  no es definitivo.
  </details>
 <details>
 <summary><strong> Arquitectura del sistema</strong></summary>
