@@ -432,6 +432,11 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 ---
 <details>
   <summary><h2> Organización</h2></summary>
+  <p align="center">
+  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Diagrama%20de%20gantt.png" alt="Logo de Edutask" width="700">
+</p>
+  https://docs.google.com/spreadsheets/d/11hAp5gZndAwbAvoBHB6q7AiIfCZhdHiujqfQJX5VaoE/edit?usp=sharing
+  
 </details>
 
 ---
