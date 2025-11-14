@@ -378,6 +378,9 @@ también en el apartado de descripción general del proyecto web por lo que hemo
 La verdad que lo tenemos todo bastante claro sobre esto .
 </details>
 <details>
+<summary><strong> Diseño Base de datos</strong></summary>
+ </details>
+<details>
 <summary><strong> Arquitectura del sistema</strong></summary>
   
   | Componente del sistema            | Tecnología / Framework                              | Versión          | Puerto                 | Descripción de uso o requisitos                                                                 | Documentación / Info |
