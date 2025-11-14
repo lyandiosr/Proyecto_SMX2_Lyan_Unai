@@ -64,6 +64,26 @@ Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para 
   - Certificado SSL para la seguridad de la página.
   - Herramientas de seguridad (firewalls).
   - Plataformas para organizar el proyecto (Trello).
+    
+
+-**Objetivos**:
+| ID  | Prioridad | Objetivo (Requisito)                       | Funcionalidad                                                  | Disparador                                   | Fecha Entrega | Estado    |
+|-----|-----------|---------------------------------------------|----------------------------------------------------------------|-----------------------------------------------|---------------|-----------|
+| ID0 | Media     | Registrar usuarios.                         | Sistema de registro y login guardando datos individuales.      | Página "Iniciar sesión" / botón "Crear cuenta" | 20/02/2026    | Pendiente |
+| ID1 | Alta      | Permitir el acceso a la página principal.   | Mostrar panel principal con tarjetas de asignaturas.           | Inicio de sesión correcto.                    | 27/02/2026    | Pendiente |
+| ID2 | Alta      | Gestión de tareas para estudiantes.         | Lista de tareas con estados (pendiente, entregado).            | Clic en la sección "Tareas".                  | 05/03/2026    | Pendiente |
+| ID3 | Alta      | Permitir entrega de tareas online.          | Subida de archivos o texto desde la plataforma.                | Clic en "Entregar tarea".                     | 08/03/2026    | Pendiente |
+| ID4 | Media     | Mostrar tareas pendientes con prioridad.    | Pantalla “Pendientes” con tarjetas y barra de progreso.        | Usuario entra en “Pendientes”.                | 12/03/2026    | Pendiente |
+| ID5 | Media     | Creación de tareas (solo profesores).       | Formulario con título, fecha límite y descripción.             | Clic en “Crear tarea”.                        | 15/03/2026    | Pendiente |
+| ID6 | Baja      | Mostrar calendario académico.               | Calendario con entregas y exámenes.                           | Clic en "Calendario".                         | 20/03/2026    | Pendiente |
+| ID7 | Baja      | Sistema de insignias motivacionales.        | Insignias automáticas según progreso.                         | Entrega o finalización de tareas.             | 01/04/2026    | Pendiente |
+| ID8 | Media     | Asistente / Tutor inteligente.              | Consejos personalizados de hábitos y prioridades.              | Sección “Profesor Inteligente”.               | 10/04/2026    | Pendiente |
+| ID9 | Baja      | Configuración de usuario.                   | Editar nombre, contraseña, foto y preferencias.                | Clic en "Configuración".                      | 14/04/2026    | Pendiente |
+
+
+
+
+    
 </details>
 
 --- 
