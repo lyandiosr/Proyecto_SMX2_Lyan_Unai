@@ -378,8 +378,15 @@ también en el apartado de descripción general del proyecto web por lo que hemo
 #### ¿Qué no tienes claro sobre la información que hay que guardar?
 La verdad que lo tenemos todo bastante claro sobre esto .
 </details>
+
+<details>
+<summary><strong> Objetivos</strong></summary>
+</details>
+
 <details>
 <summary><strong> Diseño Base de datos</strong></summary>
+  
+
 
   **ANTES:**
   
