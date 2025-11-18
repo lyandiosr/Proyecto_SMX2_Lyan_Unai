@@ -432,13 +432,17 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 <details>
 <summary><strong> Copias de seguridad</strong></summary>
 </details>
-</details>
-</details>
 
----
 <details>
   <summary><h2> Tecnologías a utilizar</h2></summary>
   </details>
+  
+</details>
+</details>
+
+
+
+
 
 ---
 <details>
