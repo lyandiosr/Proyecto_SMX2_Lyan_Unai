@@ -433,10 +433,9 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 <summary><strong> Copias de seguridad</strong></summary>
 </details>
 
+</details>
 <details>
-  <summary><h2> Tecnologías a utilizar</h2></summary>
-  </details>
-  
+<summary><strong> Tecnologías a utilizar</strong></summary>
 </details>
 </details>
 
