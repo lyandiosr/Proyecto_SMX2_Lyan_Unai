@@ -410,6 +410,29 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 | **Servicios de APIs**           | API REST                                            | —                | 4000 (backend)         | Comunicación entre frontend y backend: login, registro, tareas, entregas, cursos.               | https://restfulapi.net |
 
 </details>
+<details>
+  <summary><strong> Servicios</strong></summary>
+  
+  <details>
+<summary><strong> DNS</strong></summary>
+</details>
+
+<details>
+<summary><strong> DHCP</strong></summary>
+</details>
+
+<details>
+<summary><strong> Apache</strong></summary>
+</details>
+
+  <details>
+<summary><strong> Firewall</strong></summary>
+</details>
+
+<details>
+<summary><strong> Copias de seguridad</strong></summary>
+</details>
+</details>
 </details>
 
 ---
@@ -518,30 +541,8 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
 </details>
 </details>
 
----
-<details>
-  <summary><h2> Servicios</h2></summary>
-  
-  <details>
-<summary><strong> DNS</strong></summary>
-</details>
 
-<details>
-<summary><strong> DHCP</strong></summary>
-</details>
 
-<details>
-<summary><strong> Apache</strong></summary>
-</details>
-
-  <details>
-<summary><strong> Firewall</strong></summary>
-</details>
-
-<details>
-<summary><strong> Copias de seguridad</strong></summary>
-</details>
-</details>
 
 ---
 <details>
