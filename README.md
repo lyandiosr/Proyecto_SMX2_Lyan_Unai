@@ -444,6 +444,59 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 </details>
 <details>
 <summary><strong> Tecnologías a utilizar</strong></summary>
+  
+### **1. Servidor WEB**
+#### **HTML5 Y CSS3**
+
+**HTML5** estructura el contenido.
+**CSS3** define estilos, colores y diseño.
+Son tecnologías universales, compatibles con todos los navegadores y esenciales para un proyecto web moderno.
+#### **PHP**
+
+PHP permite crear páginas dinámicas, conectarse con la base de datos y gestionar el login, usuarios, clases, tareas, etc.
+Es ideal para proyectos educativos por su simplicidad y compatibilidad con Apache y MySQL.
+
+#### **Apache**
+Es uno de los servidores web más usados del mundo:Lo usamos porque es compatible con PHP, también es bastante estable.
+Por estas razones es perfecto para alojar una web como Edutask.
+
+#### **Cloudflare**
+
+Nuestro dominio es “edutask.tallerdekirby.es”, un derivado de “tallerdekirby.es” 
+Esta web está gestionada por cloudflare para proporcionar seguridad, rendimiento y configuración avanzada de DNS.
+
+### **2. Base de datos**
+#### **MySQL**
+Es una base de datos perfecta para nuestro proyecto Edutask, ya que nos permite guardar usuarios, clases, tareas, los estados de estas, notas y preferencias.
+
+#### **phpMyAdmin**
+Ofrece un panel visual para administrar la base de datos sin tener que usar comandos. Con este programa podremos crear tablas, exportar backup o ver errores de una manera sencilla y visual.
+
+### **3. Almacenamiento y Backup**
+#### **TrueNAS**
+TrueNAS es un sistema operativo especializado para almacenamiento en red. Lo usamos porque dentro de él se pueden gestionar copias de seguridad de una manera intuitiva.
+
+#### **Rsync**
+Rsync se usa para automatizar copias de seguridad y sincronizar directorios entre servidores. Las ventajas que ofrece son por ejemplo que es seguro y rápido, copia datos para copias de seguridad incrementales y porque tendremos un backup. Perfecto para evitar perder datos del proyecto.
+
+### **4. DNS Interno / Filtrado**
+
+#### **Pi-hole**
+Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfectas para el proyecto es que filtra la publicidad, acelera la navegación, también puede gestionar dominios locales y facilita el acceso a los servidores.
+
+### **5. Seguridad y Red**
+#### **pfSense**
+pfSense es un firewall profesional open-source. Puede proteger los servicios internos, controla el tráfico y aplica reglas de seguridad. Sin pfSense, los servidores quedarían expuestos y sin control.
+
+#### **DHCP Server**
+Asigna automáticamente las IP internas (por ejemplo 192.168.135.20).
+Esto evita configuraciones manuales y errores.
+
+
+
+
+
+
 </details>
 <details>
 <summary><strong> Listado de Tareas</strong></summary>
