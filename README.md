@@ -445,11 +445,119 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 <details>
 <summary><strong> Tecnologías a utilizar</strong></summary>
 </details>
+<details>
+<summary><strong> Listado de Tareas</strong></summary>
+  
+### **TareaID0  Registrar usuarios**
+
+- Descripción: Crear el sistema para que los usuarios puedan registrarse e iniciar sesión.
+- Cómo se hace: Se hacen formularios de registro y login. El backend guarda los datos en la base de datos y valida que el usuario exista.
+
+ ### **TareaID1 Acceso a la página principal**
+
+- Descripción: Mostrar la página principal con las asignaturas después de iniciar sesión.
+- Cómo se hace: El backend revisa las credenciales y envía al usuario al panel principal donde React muestra las asignaturas.
+
+### **Tarea ID2  Gestión de tareas para estudiantes**
+
+- Descripción: Crear una lista donde el estudiante vea sus tareas con su estado.
+- Cómo se hace: El frontend pide a la API las tareas y las muestra organizadas por estado (pendiente, entregado).
+
+ ### **Tarea ID3  Entrega de tareas online**
+
+- Descripción: Permitir que el estudiante suba un archivo o escriba un texto para entregar su tarea.
+- Cómo se hace: Se crea un formulario con opción de subir archivos y una ruta en la API para guardar la entrega.
+
+### **Tarea ID4  Mostrar tareas pendientes con prioridad**
+
+- Descripción: Hacer una pantalla que muestre las tareas pendientes resaltadas según prioridad.
+- Cómo se hace: El frontend ordena las tareas y las muestra con tarjetas, colores o barras para que se vean las más importantes.
+
+### **Tarea ID5  Creación de tareas (profesores)**
+
+- Descripción: Crear un formulario para que los profesores puedan añadir nuevas tareas.
+- Cómo se hace: Se diseña un formulario con título, fecha límite y descripción, y el backend guarda la tarea mediante la API.
+
+### **Tarea ID6  Calendario académico**
+- Descripción: Mostrar un calendario con las fechas importantes.
+- Cómo se hace: Se usa un componente de calendario y se cargan las fechas desde la base de datos usando la API.
+
+### **Tarea ID7  Sistema de insignias motivacionales**
+
+- Descripción: Dar insignias automáticamente cuando los estudiantes cumplen  objetivos.
+- Cómo se hace: Se crean reglas simples en el backend que revisan el progreso del estudiante y asignan la insignia correspondiente.
+
+ ### **Tarea ID8  Tutor inteligente**
+
+- Descripción: Dar consejos personalizados según las tareas y el rendimiento del estudiante.
+- Cómo se hace: El sistema revisa los datos del usuario (tareas, atrasos, hábitos) y genera recomendaciones.
+
+### **Tarea ID9  Configuración de usuario**
+
+- Descripción: Permitir que el usuario modifique sus datos personales.
+- Cómo se hace: Se crea una sección de ajustes con formularios que actualizan la información mediante la API.
+
+### **Tarea ID10  Configurar Cloudflare para el dominio**
+
+- Descripción: Enlazar el dominio edutask.tallerdekirby.es con Cloudflare.
+- Cómo se hace: Se añade el dominio a Cloudflare, se cambian los DNS del registrador y se crean los registros A/AAAA apuntando a la IP pública (77.231.11.106).
+
+### **Tarea ID11  Abrir y redirigir tráfico desde la IP pública**
+
+- Descripción: Permitir que el tráfico desde Internet llegue a la red del centro.
+- Cómo se hace:Se configuran reglas de firewall para aceptar tráfico entrante desde 77.231.11.106 y dirigirlo hacia el pfSens.
+
+### **Tarea ID12  Configurar pfSense como firewall principal**
+
+- Descripción: pfSense gestionará la red local y el filtrado de tráfico.
+- Cómo se hace:Se definen reglas de firewall para cada servidor (WEB, DB, TRUENAS, DNS) y se activan las interfaces.
+
+### **Tarea ID13  Configurar DHCP**
+
+- Descripción: Asignar IPs automáticas dentro del rango 192.168.135.X/24.
+- Cómo se hace: En pfSense se habilita DHCP, se define el rango y se reservan IPs fijas para cada servidor.
+
+### **Tarea ID14  Configurar el servidor WEB**
+
+- Descripción: Levantar un servidor Apache/PHP para alojar la web de Edutask.
+- Cómo se hace: Se instala Apache, PHP y las dependencias. Se sube el frontend y backend (si corresponde) y se habilita el acceso por HTTP/HTTPS.
+
+### **Tarea ID15  Configurar el servidor DB con MySQL**
+
+- Descripción: Instalar MySQL y phpMyAdmin para gestionar la base de datos.
+- Cómo se hace: Se instala MySQL, se crean usuarios, permisos y la base de datos de Edutask. Luego se habilita phpMyAdmin para gestión visual.
+
+### **Tarea ID16 Configurar TRUENAS para copias y almacenamiento**
+
+- Descripción: Usar TRUENAS para sincronización y backups mediante rsync.
+- Cómo se hace:Se instala TRUENAS, se crean datasets y se activan tareas rsync para copiar los datos de la web y base de datos.
+
+### **Tarea ID17  Configurar DNS interno con Pi-Hole**
+
+- Descripción: Pi-Hole gestionará DNS local y filtrado básico.
+- Cómo se hace: Se instala Pi-Hole, se asigna una IP fija y se configura como servidor DNS para toda la red.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </details>
-
-
-
-
+</details>
 
 ---
 <details>
