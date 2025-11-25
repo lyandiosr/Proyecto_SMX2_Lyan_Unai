@@ -377,7 +377,7 @@ Este es diseño de la base de datos de EduTask hemos organizado la información 
 
 <details>
 <summary><strong> Objetivos</strong></summary>
-
+Esto son los objetivos de Edutask para crear su página web para que todo funcione correctamente junto a sus plazos aproximados y el estado de la tarea:
 
 | ID  | Prioridad | Objetivo (Requisito)                       | Funcionalidad                                                  | Disparador                                   | Fecha Entrega | Estado    |
 |-----|-----------|---------------------------------------------|----------------------------------------------------------------|-----------------------------------------------|---------------|-----------|
@@ -397,7 +397,7 @@ Este es diseño de la base de datos de EduTask hemos organizado la información 
 
 <details>
 <summary><strong> Arquitectura del sistema</strong></summary>
-Esto es el hardware y software que vamos a utilizar para crear y probar nuestro proyecto Edutask. Se compone de varios dispositivos con sus respectivos usos 
+Esto es el hardware y software que vamos a utilizar para crear y probar nuestro proyecto Edutask. Se compone de varios dispositivos con sus respectivos usos:
   
   | Componente del sistema            | Tecnología / Framework                              | Versión          | Puerto                 | Descripción de uso o requisitos                                                                 | Documentación / Info |
 |----------------------------------|------------------------------------------------------|------------------|------------------------|-------------------------------------------------------------------------------------------------|-----------------------|
