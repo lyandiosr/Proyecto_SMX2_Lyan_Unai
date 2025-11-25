@@ -6,31 +6,6 @@
 
 <p align="center"><em>📚 Plataforma educativa para organizar clases, tareas y calendario académico.</em></p>
 
-<details>
-  <summary><h2> Índice</h2></summary>
-
-## **1. Introducción**
-## **2. Briefing**
-## **3. Arquitectura del software**
-#### - 3.1 Backend
-## **4. Tecnologías a utilizar**
-## **5. Red**
-## **6. Web**
-#### -6.1 Mockup
-#### -6.2 Mapa de navegabilidad
-## **7.Servicios**
-#### -7.1 DNS
-#### -7.2 DHCP
-#### -7.3 Apache
-#### -7.4 Firewall
-#### -7.5 Copias de seguridad
-## **8. Conclusiones**
-## **9. Bibliografía**
-
-  
-  </details>
-  
---- 
   
 <details>
   <summary><h2> Introducción</h2></summary>
@@ -64,12 +39,7 @@ Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para 
   - Certificado SSL para la seguridad de la página.
   - Herramientas de seguridad (firewalls).
   - Plataformas para organizar el proyecto (Trello).
-    
 
-
-
-
-    
 </details>
 
 --- 
@@ -77,14 +47,16 @@ Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para 
   <summary><h2> Arquitectura del software</h2></summary>
 
   <details>
-    <summary><strong> Backend</strong></summary>
-  
+    <summary><strong> Base de datos</strong></summary>
+    
+   <details>
+    <summary>Backend</summary>
 
   ## 1. Descripción general del proyecto web
-  #### **¿De qué trata tu web? Explica brevemente el propósito de tu página web (por ejemplo: tienda online, blog, red social, catálogo, etc.).**
+ 
   La página web trata sobre una plataforma educativa que se llama Edutask, diseñada para ayudar a profesores y estudiantes a organizar sus actividades académicas de manera más rápida y clara . Su propósito principal es mejorar la enseñanza y el aprendizaje a través de herramientas como insignias motivacionales y un tutor inteligente y también  permitir la gestión de tareas.
 
-  #### **¿Qué funcionalidades ofrecerá a los usuarios? Lista las principales funciones (ej.: crear cuenta, hacer pedidos, subir fotos, dejar comentarios, etc.).**
+
   - Crear cuenta y perfil personalizado (para profesores y estudiantes).
   - Subir y gestionar tareas (crear y entregar y puntuar las actividades).
   - Organizar actividades.
@@ -95,7 +67,7 @@ Los módulos que más van a ayudar a nuestro proyecto son aplicaciones web para 
   - Panel de control para los profesores (seguimiento del progreso, estadísticas de los alumnos).
 
   ## 2. Identificación de entidades principales
-  #### **¿Qué elementos importantes hay en tu web que necesitan almacenarse?**
+
   - **Usuarios**: información de los  profesores y estudiantes (datos personales, credenciales, roles).
   - **Tareas**: detalles de las actividades creadas, entregadas y puntuadas.
   - **Insignias y recompensas:** logros de los  estudiantes.
@@ -357,12 +329,50 @@ Relación: 1 usuario — N registros de historial
 - Fecha de obtención: 30/09/2025
 
 ## 6. Reflexiones, dificultades y dudas que tienes sobre la base de datos
-#### ¿Qué partes te han resultado más difíciles de pensar?
+
 Nos ha costado más el apartado de Identificación de entidades principales porque aún no tenemos del todo claro cómo será el proyecto y nos ha costado pensar todo esa parte, 
 también en el apartado de descripción general del proyecto web por lo que hemos dicho antes no tenemos del todo claro dónde queremos llegar con el proyecto tenemos algunas dudas aun con eso. 
 
 #### ¿Qué no tienes claro sobre la información que hay que guardar?
 La verdad que lo tenemos todo bastante claro sobre esto .
+
+</details>
+
+<details>
+<summary>Diseño de la base de datos</summary>
+Este es diseño de la base de datos de EduTask hemos organizado la información de manera clara y funcional. Hemos creado tablas para profesores, usuarios, insignias, clases, tareas y entregas, definiendo sus relaciones para que los datos se conecten bien. 
+  
+ **ANTES:**
+  
+  <p align="center">
+  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-14%20102226.png" alt="Logo de Edutask" width="500">
+</p>
+
+
+  **DESPUÉS:**
+  
+   <p align="center">
+  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Diagrama%20base%20de%20datos.png" alt="Logo de Edutask" width="500">
+</p>
+
+
+</details>
+
+<details>
+<summary><strong> Arquitectura del sistema</strong></summary>
+  
+  | Componente del sistema            | Tecnología / Framework                              | Versión          | Puerto                 | Descripción de uso o requisitos                                                                 | Documentación / Info |
+|----------------------------------|------------------------------------------------------|------------------|------------------------|-------------------------------------------------------------------------------------------------|-----------------------|
+| **Hardware**                      | VPS (4 vCPU, 8GB RAM, 200GB SSD)                    | —                | —                      | Recursos necesarios para alojar backend, base de datos y servidor web de Edutask.               | https://digitalocean.com |
+| **Sistema operativo**            | Ubuntu Server (libre)                               | 22.04 LTS        | —                      | SO libre y estable para servidores web. Corre Node.js, Nginx y servicios backend.               | https://ubuntu.com |
+| **Interfaz de usuario (Frontend)** | HTML5, CSS3, JavaScript, React.js                    | —                | 3000 (desarrollo)      | Estructura visual del sistema: login, panel, tareas, configuración.                             | https://react.dev |
+| **Lógica de negocio (Backend)** | Node.js + Express.js                                 | Node 18 / Exp 4  | 4000                   | Procesa login, usuarios, tareas, cursos; maneja roles y peticiones API.                         | https://expressjs.com |
+| **Servidor web**                 | Nginx                                                | 1.24 (Ubuntu)    | 80 / 443               | Publica el frontend y actúa como reverse proxy hacia el backend.                                | https://nginx.org |
+| **Base de datos**                | MySQL                                               | 8.0              | 3306                   | Guarda usuarios, roles, cursos, tareas, entregas y calificaciones.                               | https://dev.mysql.com/doc |
+| **Sistema gestor de BD**        | phpMyAdmin                                           | 5.x              | 8080 / 80              | Administración visual: creación de tablas, consultas, backups y usuarios.                       | https://phpmyadmin.net |
+| **Servicios de APIs**           | API REST                                            | —                | 4000 (backend)         | Comunicación entre frontend y backend: login, registro, tareas, entregas, cursos.               | https://restfulapi.net |
+
+</details>
 </details>
 
 <details>
@@ -384,27 +394,10 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 
 </details>
 
-<details>
-<summary><strong> Diseño Base de datos</strong></summary>
-  
-
-
-  **ANTES:**
-  
-  <p align="center">
-  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-11-14%20102226.png" alt="Logo de Edutask" width="500">
-</p>
-  - Este es diseño de la base de datos de EduTask hemos organizado la información de manera clara y funcional. Hemos creado tablas para profesores, usuarios, insignias, clases, tareas y entregas, definiendo sus relaciones para que los datos se conecten bien. Aunque este diseño  no es definitivo.
-
-  **DESPUÉS:**
-  
-   <p align="center">
-  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Diagrama%20base%20de%20datos.png" alt="Logo de Edutask" width="500">
-</p>
- </details>
 
 <details>
 <summary><strong> Arquitectura del sistema</strong></summary>
+Esto es el hardware y software que vamos a utilizar para crear y probar nuestro proyecto Edutask. Se compone de varios dispositivos con sus respectivos usos 
   
   | Componente del sistema            | Tecnología / Framework                              | Versión          | Puerto                 | Descripción de uso o requisitos                                                                 | Documentación / Info |
 |----------------------------------|------------------------------------------------------|------------------|------------------------|-------------------------------------------------------------------------------------------------|-----------------------|
@@ -417,33 +410,10 @@ La verdad que lo tenemos todo bastante claro sobre esto .
 | **Sistema gestor de BD**        | phpMyAdmin                                           | 5.x              | 8080 / 80              | Administración visual: creación de tablas, consultas, backups y usuarios.                       | https://phpmyadmin.net |
 | **Servicios de APIs**           | API REST                                            | —                | 4000 (backend)         | Comunicación entre frontend y backend: login, registro, tareas, entregas, cursos.               | https://restfulapi.net |
 
-</details>
-<details>
-  <summary><strong> Servicios</strong></summary>
-  
-  <details>
-<summary><strong> DNS</strong></summary>
-</details>
-
-<details>
-<summary><strong> DHCP</strong></summary>
-</details>
-
-<details>
-<summary><strong> Apache</strong></summary>
-</details>
-
-  <details>
-<summary><strong> Firewall</strong></summary>
-</details>
-
-<details>
-<summary><strong> Copias de seguridad</strong></summary>
-</details>
 
 </details>
 <details>
-<summary><strong> Tecnologías a utilizar</strong></summary>
+<summary><strong> Tecnologías implementadas y servicios</strong></summary>
   
 ### **1. Servidor WEB**
 #### **HTML5 Y CSS3**
