@@ -682,6 +682,10 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
   
   <summary><h2> Arduino</h2></summary>
   
+<p align="center">
+<img src="images.jpg" alt="Mi banner" width="800" height="200">
+  </p>
+  
   **2.1 ¿Qué es Arduino?**
 - Arduino es una placa electrónica con un microcontrolador que se puede programar para controlar luces motores sensores y otros dispositivos se utiliza junto con un programa en la computadora para escribir instrucciones y automatizar tareas siendo útil para aprender electrónica y crear proyectos interactivos
 
