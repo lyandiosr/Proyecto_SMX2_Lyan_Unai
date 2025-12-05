@@ -677,6 +677,53 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
   <summary><h2> Bibliografía</h2></summary>
 </details>
 
+---
+<details>
+  
+  <summary><h2> Arduino</h2></summary>
+  
+  **2.1 ¿Qué es Arduino?**
+- Arduino es una placa electrónica con un microcontrolador que se puede programar para controlar luces motores sensores y otros dispositivos se utiliza junto con un programa en la computadora para escribir instrucciones y automatizar tareas siendo útil para aprender electrónica y crear proyectos interactivos
+
+**2.2 ¿Cuáles son sus características más importantes?**
+- Las características más importantes de Arduino son: tiene un microcontrolador programable. Permite leer sensores y controlar luces y motores. Es fácil de programar y usa un lenguaje sencillo basado en C. Tiene hardware abierto. Se puede elegir entre varios modelos como Uno, Nano o Mega. 
+
+**2.3 ¿Cuál es el origen de Arduino?**
+- Arduino fue creado en 2005 en el Instituto IVREA, en Italia, como una herramienta para estudiantes de diseño sin conocimientos técnicos en electrónica y programación. Sus fundadores son: Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino y David Mellis desarrollaron Arduino como una plataforma de hardware libre y de bajo costo, con el objetivo de facilitar la creación de proyectos interactivos.
+El nombre "Arduino" proviene de un bar en Ivrea frecuentado por los fundadores, que también toma el nombre de un rey italiano.
+
+**2.4 ¿Qué modelos de Arduino hay? Haz una tabla donde especifiques para cada modelo: microcontrolador, voltaje, pines digitales, entradas analógicas, memoria, reloj.**
+| Modelo               | Microcontrolador             | Voltaje | Pines digitales | Entradas analógicas | Memoria Flash | Frecuencia |
+|----------------------|------------------------------|---------|------------------|-----------------------|---------------|------------|
+| Arduino Uno R3       | ATmega328P                   | 5V      | 14               | 6                     | 32 KB         | 16 MHz     |
+| Arduino Mega 2560    | ATmega2560                   | 5V      | 54               | 16                    | 256 KB        | 16 MHz     |
+| Arduino Nano         | ATmega328P                   | 5V      | 22               | 8                     | 32 KB         | 16 MHz     |
+| Arduino Leonardo     | ATmega32u4                   | 5V      | 20               | 12                    | 32 KB         | 16 MHz     |
+| Arduino Due          | AT91SAM3X8E (ARM Cortex-M3)  | 3.3V    | 54               | 12                    | 512 KB        | 84 MHz     |
+| Arduino Micro        | ATmega32u4                   | 5V      | 20               | 12                    | 32 KB         | 16 MHz     |
+| Arduino MKR1000      | SAMD21 Cortex-M0+            | 3.3V    | 8                | 7                     | 256 KB        | 48 MHz     |
+| Arduino Nano 33 IoT  | SAMD21 Cortex-M0+            | 3.3V    | 14               | 8                     | 256 KB        | 48 MHz     |
+
+
+**2.5 ¿Para qué sirve un Arduino?**
+
+- La principal utilidad que se le da a un arduino es la automatización que esto sirve para controlar las luces por ejemplo de una casa, sensores, motores etc.. que esto puede hacer que podamos abrir una puerta de un parking de un garaje con un mando pero también se les puede dar otras funciones como para el aprendizaje básico de de la programación o en un nivel mas avanzado tambien lo podriamos utilizar en el área de IoT que lo que podemos hacer con esto es recoger los datos de los sensores de los arduino y mandarlos a la nube.
+En resumen esta tecnología cada vez está creciendo más gracias a la integración que está teniendo en diferentes ámbitos ya que si nos paramos a pensar estamos rodeados de esta tecnología.
+
+**2.6 ¿Qué lenguaje utiliza?**
+
+- Arduino usa un lenguaje C/C++, pero adaptado para que sea más fácil de entender y usar ya que esto muchas veces se utiliza para el aprendizaje o para gente que está empezando a programar. Se usa principalmente en el entorno llamado Arduino IDE, donde escribes y juntas la información envías el código a la placa.
+Este lenguaje solo permite controlar un par de objetos básicos como: Luces Leds,Rgb, Motores servos o DC,Sensores de temperatura,humedad o ultrasonido, Pantallas Lcd o Oled y por ultimo para comunicaciones como Bluetooth, Wi-fi etc….
+
+**2.7 ¿Qué es el Arduino IDE?**
+
+- Es el programa que usas en el ordenador para escribir, compilar y cargar código en una placa Arduino y este software es totalmente gratuito.
+
+
+
+
+
+</details>
 
 
 
