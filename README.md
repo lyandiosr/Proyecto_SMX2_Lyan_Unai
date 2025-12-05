@@ -725,7 +725,9 @@ Este lenguaje solo permite controlar un par de objetos básicos como: Luces Leds
 
 - Es el programa que usas en el ordenador para escribir, compilar y cargar código en una placa Arduino y este software es totalmente gratuito.
 
-
+<p align="center">
+  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-12-05%20131216.png" alt="Logo de Edutask" width="300">
+</p>
 
 
 
