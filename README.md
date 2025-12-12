@@ -735,7 +735,7 @@ Este lenguaje solo permite controlar un par de objetos básicos como: Luces Leds
 
 <details>
   
-  <summary><h2> Blink y semáforo</h2></summary>
+  <summary><h2> Blink y Semáforo</h2></summary>
 
 **Blink**
 
@@ -781,6 +781,10 @@ En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constant
 **¿Qué quiere decir la línea delay(1000); ?**
 
 - Delay(1000):significa que el programa se detiene durante 1000 milisegundos que es lo mismo que  1 segundo, antes de continuar con la siguiente instrucción.
+
+
+**Semáforo**
+
 
 </p>
 </details>
