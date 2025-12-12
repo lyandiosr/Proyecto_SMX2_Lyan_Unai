@@ -733,11 +733,11 @@ Este lenguaje solo permite controlar un par de objetos básicos como: Luces Leds
   <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/Captura%20de%20pantalla%202025-12-05%20131216.png" alt="Logo de Edutask" width="300">
 </p>
 
-
-
+<details>
+  
+  <summary><h2> Blink y semáforo</h2></summary>
+  
 </details>
-
-
 
 
   
