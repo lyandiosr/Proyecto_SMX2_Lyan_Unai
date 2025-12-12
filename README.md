@@ -795,7 +795,7 @@ En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constant
 **(3) Esquema del circuito como se muestra mas abajo**
 
   <p align="center">
-  <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/IMG_9942.jpeg" alt="Logo de Edutask" width="300">
+  <img src="Captura de pantalla 2025-12-12 135336.png" alt="Logo de Edutask" width="300">
 
 
 </p>
