@@ -765,6 +765,23 @@ En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constant
   <p align="center">
   <img src="https://github.com/lyandiosr/Proyecto_SMX2_Lyan_Unai/blob/main/IMG_9942.jpeg" alt="Logo de Edutask" width="300">
 
+
+**¿Qué son el void setup() and void loop()?**
+- void setup(): Se ejecuta una sola vez cuando tu Arduino se ENCIENDE o se reinicia. Se usa para configurar las salidas y las entradas, inicializar variables o iniciar comunicación como por ejemplo el serial o los sensores.
+
+
+- void loop(): Este bloque se ejecuta repetidamente y sin fin mientras Arduino tenga energía. En loop() pones el código que quieres que repita continuamente, como parpadear un LED o leer sensores.
+
+
+**¿Qué quiere decir la línea: #define LED_BUITIN 2 ?**
+- La línea significa que se crea una constante llamada LED_BUILTIN y que cada vez que aparezca ese nombre en el código, el compilador lo reemplazará por el número 2 antes de compilar. Sirve para indicar que el LED integrado de la placa está conectado al pin 2, a si que en vez de escribir el número directamente en el programa, se usa un nombre más claro y fácil de entender.
+
+
+
+**¿Qué quiere decir la línea delay(1000); ?**
+
+- Delay(1000):significa que el programa se detiene durante 1000 milisegundos que es lo mismo que  1 segundo, antes de continuar con la siguiente instrucción.
+
 </p>
 </details>
 
