@@ -799,7 +799,8 @@ En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constant
   <img src="Captura de pantalla 2025-12-12 135336.png" alt="Logo de Edutask" width="300">
 
 (4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo
-
+ <p align="center">
+  <img src="Captura de pantalla 2025-12-12 135339.png" alt="Logo de Edutask" width="300">
 (5) Video de la practica
 
 (6) Imagen para la entrada del blog o proyecto
