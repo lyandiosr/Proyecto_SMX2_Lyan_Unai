@@ -737,6 +737,7 @@ Este lenguaje solo permite controlar un par de objetos básicos como: Luces Leds
   
   <summary><h2> Blink y semáforo</h2></summary>
 
+**Blink**
 **(1) Objetivo de la práctica**
 
 En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constantemente .
