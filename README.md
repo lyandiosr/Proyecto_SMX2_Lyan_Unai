@@ -784,6 +784,10 @@ En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constant
 
 
 **Semáforo**
+**(1) Objetivo de la práctica**
+- En una placa de arduino ESP32 tenemos que conseguir tres leds de color verde,amarillo,rojo se encinedan a timepos diferentes recrando un semaforo.
+
+  
 
 
 </p>
