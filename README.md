@@ -813,6 +813,20 @@ En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constant
   <img src="IMG_9947.jpeg" alt="Logo de Edutask" width="300">
 
 </p>
+
+
+
+(1) Objetivo de la practica
+- El objetivo de esta practica es encender una led utilizando un boton. Usando un recorrido electrico.
+
+(2) Material y explicacion de cada componente
+- Hemos utilizado 4 Jumpers para pasar la electricidad, 3 resistencias para conducir la electricidad, el boton para encender la led y el led.
+
+(3) Esquema del circuito como se muestra mas abajo
+
+(4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo
+
+(5) Video de la practica
 </details>
 
 
