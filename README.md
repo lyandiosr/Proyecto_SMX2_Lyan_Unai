@@ -735,7 +735,9 @@ Este lenguaje solo permite controlar un par de objetos básicos como: Luces Leds
 
 <details>
   
-  <summary><h2> Blink y Semáforo</h2></summary>
+  <summary><h2> ACTIVIDADES</h2></summary>
+  
+**A1 Blink y Semáforo**
 
 **Blink**
 
@@ -813,8 +815,12 @@ En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constant
   <img src="IMG_9947.jpeg" alt="Logo de Edutask" width="300">
 
 </p>
+<details>
+ <summary><h2> A2-led+button </h2></summary>
+  
+</details>
 
-
+**Capítulo 2.1 – Button & Led**
 
 (1) Objetivo de la practica
 - El objetivo de esta practica es encender una led utilizando un boton. Usando un recorrido electrico.
@@ -841,10 +847,11 @@ En una placa de arduino ESP32 tenemos que conseguir que un led parpadee constant
 https://github.com/user-attachments/assets/5429a2b3-8774-4eb5-addf-49af5b4a905e
 
 
-</details>
 
 
   
+ 
+</details>
 
 
   
