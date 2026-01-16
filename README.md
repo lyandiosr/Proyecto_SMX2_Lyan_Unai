@@ -873,7 +873,25 @@ https://github.com/user-attachments/assets/5429a2b3-8774-4eb5-addf-49af5b4a905e
 
 https://github.com/user-attachments/assets/d80640d9-dd3e-445e-92de-0cb5115ea3db
 
+<details>
+ <summary><h2> A3-RGB </h2></summary>
 
+
+(1) Objetivo de la practica
+
+(2) Material y explicacion de cada componente
+
+(3) Esquema del circuito como se muestra mas abajo
+
+(4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo
+
+(5) Video de la practica
+
+
+https://github.com/user-attachments/assets/b346ac8d-bbca-4d08-afb0-dd93cc8cea40
+
+
+</details>
  
 </details>
 
