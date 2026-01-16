@@ -878,13 +878,24 @@ https://github.com/user-attachments/assets/d80640d9-dd3e-445e-92de-0cb5115ea3db
 
 
 (1) Objetivo de la practica
+Aprender a controlar un LED RGB usando el Arduino (ESP32 | Wrover), manipulando sus funciones de color y comprendiendo conceptos como luz multicolor, aleatoriedad, gradientes y control de intensidad de cada color primario (rojo, verde y azul).
 
 (2) Material y explicacion de cada componente
+
+LED RGB de 4 pines (ánodo común) Función: Es el dispositivo que emite luz de colores.
+Tiene 3 LEDs internos (Rojo, Verde, Azul) y un pin común (positivo en este caso).
+
+Combinando la intensidad de cada color, se pueden generar millones de colores visibles.
+
+Resistencias 220 Ω Función: Protegen cada LED interno de recibir demasiada corriente, evitando que se quemen.
+
+Cables de conexión (jumper wires) Función: Transportan la señal eléctrica desde los pines de la placa Arduino hacia el LED y las resistencias en la protoboard.
 
 (3) Esquema del circuito como se muestra mas abajo
 
 (4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo
-
+  <img src="Captura de pantalla 2026-01-16 134902.png" alt="kn" width="300">
+  
 (5) Video de la practica
 
 
