@@ -452,7 +452,7 @@ Rsync se usa para automatizar copias de seguridad y sincronizar directorios entr
 ### **4. DNS Interno / Filtrado**
 - El DNS es un servicio que permite convertir los nombres de las páginas web, como por ejemplo www.google.com , en direcciones IP para que los dispositivos puedan conectarse a Internet. Nosotros hemos utilizado   Pi-hole como servidor DNS para gestionar estas peticiones dentro de la red.
   
-#### **Pi-hole**
+#### **Pi-hole:**
 Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfectas para el proyecto es que filtra la publicidad, acelera la navegación, también puede gestionar dominios locales y facilita el acceso a los servidores.
 
 **¿Por qué es necesario?**
@@ -473,15 +473,34 @@ Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfect
 **Incidencias**
 - Nosotros mientras estabamos configurado el netplan tuvimos problemas con los espacios de las columnas eso hacia que nos diera varios errores porque el sistema si no es con los espacios que pide no lo lee bien esa es la unica incidencia que tuvimos.
 
+### **5. DHCP Server**
+
+- El DHCP es un servicio de red que se encarga de asignar automáticamente direcciones IP y otros parámetros de red a los dispositivos que se conectan a una red. El dchp hace que  los equipos puedan comunicarse sin necesidad de configurar la red de forma manual.
+
+**¿Por qué es necesario?**
+- El DHCP es necesario porque facilita la conexión de los dispositivos a la red, evita errores de configuración manual y permite una mejor gestión de las direcciones IP disponibles.
+
+**¿Dónde hay información oficial?**
+- Nosotros hemos sacado la información ofical que no ha ayudado a hacer el DNS es la de pi-hole https://pi-hole.net/
+
+**Instalación del servicio DHCP**
+- El servicio DHCP se configura en Pi-hole desde el panel de administración web. Se establece un rango de direcciones IP desde 192.168.6.120 hasta 192.168.6.130, con puerta de enlace 192.168.6.1 y máscara de red 255.255.255.0.
+
+**Detalles de la máquina virtual**
+- La máquina virtual donde nosotros tenemos el   Pi-hole utiliza Ubuntu Server 22.04, tiene de 1 GB de memoria RAM, 1 procesador, 16 GB de disco y una dirección IP fija para que funcione el  servicio DHCP.
 
 
-### **5. Seguridad y Red**
+**Pasos a seguir**
+- Primero se accede al panel web de Pi-hole, después se activa el servicio DHCP, se configura el rango 192.168.6.120–192.168.6.130, la puerta de enlace 192.168.6.1 y la máscara 255.255.255.0, y  se guardan los cambios para que los dispositivos reciban la configuración automáticamente.
+
+**Incidencias**
+- Para la configuración del dhcp no hemos tenido ninguna incidencia.
+
+### **6. Seguridad y Red**
 #### **pfSense**
 pfSense es un firewall profesional open-source. Puede proteger los servicios internos, controla el tráfico y aplica reglas de seguridad. Sin pfSense, los servidores quedarían expuestos y sin control.
 
-#### **DHCP Server**
-Asigna automáticamente las IP internas (por ejemplo 192.168.135.20).
-Esto evita configuraciones manuales y errores.
+
 
 
 
