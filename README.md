@@ -442,6 +442,8 @@ Es una base de datos perfecta para nuestro proyecto Edutask, ya que nos permite 
 #### **phpMyAdmin**
 Ofrece un panel visual para administrar la base de datos sin tener que usar comandos. Con este programa podremos crear tablas, exportar backup o ver errores de una manera sencilla y visual.
 
+---
+
 ### **3. Almacenamiento y Backup**
 #### **TrueNAS**
 TrueNAS es un sistema operativo especializado para almacenamiento en red. Lo usamos porque dentro de él se pueden gestionar copias de seguridad de una manera intuitiva.
@@ -500,6 +502,8 @@ Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfect
 
 **Incidencias**
 - Para la configuración del dhcp no hemos tenido ninguna incidencia.
+
+---
 
 ### **6. Seguridad y Red**
 #### **pfSense**
