@@ -450,9 +450,30 @@ TrueNAS es un sistema operativo especializado para almacenamiento en red. Lo usa
 Rsync se usa para automatizar copias de seguridad y sincronizar directorios entre servidores. Las ventajas que ofrece son por ejemplo que es seguro y rápido, copia datos para copias de seguridad incrementales y porque tendremos un backup. Perfecto para evitar perder datos del proyecto.
 
 ### **4. DNS Interno / Filtrado**
-
+- El DNS es un servicio que permite convertir los nombres de las páginas web, como por ejemplo www.google.com , en direcciones IP para que los dispositivos puedan conectarse a Internet. Nosotros hemos utilizado   Pi-hole como servidor DNS para gestionar estas peticiones dentro de la red.
+  
 #### **Pi-hole**
 Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfectas para el proyecto es que filtra la publicidad, acelera la navegación, también puede gestionar dominios locales y facilita el acceso a los servidores.
+
+**¿Por qué es necesario?**
+- El DNS es necesario para poder navegar por Internet de forma normal, sin él DNS habría que usar direcciones IP en lugar de nombres. Pi-hole mejora la navegación al reducir la publicidad, aumentar la privacidad y disminuir el uso de ancho de banda.
+
+**¿Dónde hay información oficial?**
+-  Nosotros hemos sacado la información ofical que no ha ayudado a hacer el DNS es la de pi-hole https://pi-hole.net/
+
+**Instalación del servicio DNS**
+- El servicio DNS se instala en una máquina virtual con Ubuntu Server configurada con la dirección IP estática 192.168.6.100. La instalación se hace con el Pi-hole, donde se selecciona la interfaz de red y se configuran las opciones  básicas del DNS.
+
+**Detalles de la máquina virtual**
+- La máquina virtual que hemos utilizado tiene Ubuntu Server 22.04, 1 GB de memoria RAM, 1 procesador, 16 GB de disco y una configuración de red con IP fija para que  funcione el servicio DNS.
+
+**Pasos a seguir**
+- Primero hemos actualizado el sistema operativo, después  instalamos el  Pi-hole, se configura la contraseña del panel web y despues se pone  la dirección IP 192.168.6.100 como servidor DNS en el router o en los dispositivos de la red.
+
+**Incidencias**
+- Nosotros mientras estabamos configurado el netplan tuvimos problemas con los espacios de las columnas eso hacia que nos diera varios errores porque el sistema si no es con los espacios que pide no lo lee bien esa es la unica incidencia que tuvimos.
+
+
 
 ### **5. Seguridad y Red**
 #### **pfSense**
