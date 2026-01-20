@@ -449,6 +449,9 @@ TrueNAS es un sistema operativo especializado para almacenamiento en red. Lo usa
 #### **Rsync**
 Rsync se usa para automatizar copias de seguridad y sincronizar directorios entre servidores. Las ventajas que ofrece son por ejemplo que es seguro y rápido, copia datos para copias de seguridad incrementales y porque tendremos un backup. Perfecto para evitar perder datos del proyecto.
 
+---
+
+
 ### **4. DNS Interno / Filtrado**
 - El DNS es un servicio que permite convertir los nombres de las páginas web, como por ejemplo www.google.com , en direcciones IP para que los dispositivos puedan conectarse a Internet. Nosotros hemos utilizado   Pi-hole como servidor DNS para gestionar estas peticiones dentro de la red.
   
@@ -472,6 +475,8 @@ Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfect
 
 **Incidencias**
 - Nosotros mientras estabamos configurado el netplan tuvimos problemas con los espacios de las columnas eso hacia que nos diera varios errores porque el sistema si no es con los espacios que pide no lo lee bien esa es la unica incidencia que tuvimos.
+  
+---
 
 ### **5. DHCP Server**
 
