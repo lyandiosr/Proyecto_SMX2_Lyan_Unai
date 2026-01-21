@@ -469,24 +469,7 @@ Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfect
 
 - El DHCP es un servicio de red que se encarga de asignar automáticamente direcciones IP y otros parámetros de red a los dispositivos que se conectan a una red. El dchp hace que  los equipos puedan comunicarse sin necesidad de configurar la red de forma manual.
 
-**¿Por qué es necesario?**
-- El DHCP es necesario porque facilita la conexión de los dispositivos a la red, evita errores de configuración manual y permite una mejor gestión de las direcciones IP disponibles.
 
-**¿Dónde hay información oficial?**
-- La información oficial sobre el DCHP está en la dirección URL : https://pi-hole.net/ https://pi-hole.net/
-
-**Instalación del servicio DHCP**
-- El servicio DHCP se configura en Pi-hole desde el panel de administración web. Se establece un rango de direcciones IP desde 192.168.6.120 hasta 192.168.6.130, con puerta de enlace 192.168.6.1 y máscara de red 255.255.255.0.
-
-**Detalles de la máquina virtual**
-- La máquina virtual donde nosotros tenemos el   Pi-hole utiliza Ubuntu Server 22.04, tiene de 1 GB de memoria RAM, 1 procesador, 16 GB de disco y una dirección IP fija para que funcione el  servicio DHCP.
-
-
-**Pasos a seguir**
-- Primero se accede al panel web de Pi-hole, después se activa el servicio DHCP, se configura el rango 192.168.6.120–192.168.6.130, la puerta de enlace 192.168.6.1 y la máscara 255.255.255.0, y  se guardan los cambios para que los dispositivos reciban la configuración automáticamente.
-
-**Incidencias**
-- Para la configuración del dhcp no hemos tenido ninguna incidencia.
 
 ---
 
@@ -608,7 +591,7 @@ pfSense es un firewall profesional open-source. Puede proteger los servicios int
   
 **Configuración del servicio DNS con Pi-hole**
 
-Pi-hole funciona como un servidor DNS dentro de nuestra red. Además de traducir los nombres de las páginas web, ofrece funciones muy útiles para nuestro proyecto, como el bloqueo de publicidad, una navegación más rápida, mayor privacidad y un menor consumo de datos. También nos permite gestionar dominios locales y facilita el acceso a los servidores de la red.
+- Pi-hole funciona como un servidor DNS dentro de nuestra red. Además de traducir los nombres de las páginas web, ofrece funciones muy útiles para nuestro proyecto, como el bloqueo de publicidad, una navegación más rápida, mayor privacidad y un menor consumo de datos. También nos permite gestionar dominios locales y facilita el acceso a los servidores de la red.
 
 El servidor DNS es necesario para poder navegar por Internet de forma normal, ya que se encarga de convertir los nombres de las páginas web en direcciones IP. Sin un DNS, tendríamos que usar directamente las direcciones IP, lo que haría la navegación más complicada. Pi-hole mejora la experiencia de uso al reducir la publicidad, aumentar la privacidad y disminuir el uso de ancho de banda.
 
@@ -625,6 +608,21 @@ Cuando terminó la instalación, hemos establecido una contraseña para entrar a
 La única incidencia que nos apareció durante la configuración fue al usar netplan, ya que los errores en los espacios del archivo provocaban fallos en la red. Este problema lo solucionamos corrigiendo la estructura del archivo y respetando los espacios necesarios, y después de eso el servicio DNS funcionó correctamente.
 
 **Configuración del servicio DCHP con Pi-hole**
+
+- El servicio DHCP es un servicio de red que se encarga de dar direcciones IP y otros datos de red de forma automática a los dispositivos que se conectan a la red. Gracias al DHCP, los equipos pueden conectarse y comunicarse sin tener que configurar la red a mano.
+
+El servicio DHCP es necesario porque hace más fácil la conexión de los dispositivos a la red, evita errores al poner las direcciones IP manualmente y ayuda a organizar mejor las direcciones IP disponibles.
+
+La información oficial sobre el servicio DHCP y su uso en Pi-hole se puede encontrar en la página web oficial de Pi-hole, en la dirección https://pi-hole.net/
+, donde se explica su funcionamiento y cómo configurarlo.
+
+Para configurar el servicio DHCP hemos usado Pi-hole desde su panel web. En la configuración hemos puesto un rango de direcciones IP que va desde la 192.168.6.120 hasta la 192.168.6.130. También hemos configurado la puerta de enlace como 192.168.6.1 y la máscara de red 255.255.255.0 para que los dispositivos funcionen correctamente en la red.
+
+La máquina virtual donde tenemos instalado Pi-hole usa Ubuntu Server 22.04, tiene 1 GB de memoria RAM, un procesador, 16 GB de disco duro y una dirección IP fija, lo que permite que el servicio DHCP funcione sin problemas.
+
+Para realizar la configuración, primero entramos al panel web de Pi-hole desde un navegador. Después activamos el servicio DHCP y configuramos el rango de direcciones IP 192.168.6.120 a 192.168.6.130, la puerta de enlace 192.168.6.1 y la máscara de red 255.255.255.0. Por último, guardamos los cambios para que los dispositivos que se conecten a la red reciban la configuración automáticamente.
+
+Durante la configuración del servicio DHCP no hemos tenido ningún problema, ya que todo funcionó correctamente desde el principio.
   
 </details>
   
