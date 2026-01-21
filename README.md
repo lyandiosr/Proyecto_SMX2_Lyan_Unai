@@ -612,9 +612,18 @@ pfSense es un firewall profesional open-source. Puede proteger los servicios int
 
 
 
-
-
 </details>
+</details>
+
+---
+<details>
+  <summary><h2> Servicios</h2></summary>
+<details>
+  <summary><strong> DNS y DHCP Pi-hole</strong></summary>
+
+  
+</details>
+  
 </details>
 
 ---
