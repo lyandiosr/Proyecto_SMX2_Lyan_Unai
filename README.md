@@ -620,7 +620,26 @@ pfSense es un firewall profesional open-source. Puede proteger los servicios int
   <summary><h2> Servicios</h2></summary>
 <details>
   <summary><strong> DNS y DHCP Pi-hole</strong></summary>
+  
+**Configuración del servicio DNS con Pi-hole**
 
+Pi-hole funciona como un servidor DNS dentro de nuestra red. Además de traducir los nombres de las páginas web, ofrece funciones muy útiles para nuestro proyecto, como el bloqueo de publicidad, una navegación más rápida, mayor privacidad y un menor consumo de datos. También nos permite gestionar dominios locales y facilita el acceso a los servidores de la red.
+
+El servidor DNS es necesario para poder navegar por Internet de forma normal, ya que se encarga de convertir los nombres de las páginas web en direcciones IP. Sin un DNS, tendríamos que usar directamente las direcciones IP, lo que haría la navegación más complicada. Pi-hole mejora la experiencia de uso al reducir la publicidad, aumentar la privacidad y disminuir el uso de ancho de banda.
+
+La información oficial sobre Pi-hole se puede encontrar en su página web oficial, en la dirección https://pi-hole.net/
+, donde se explica su funcionamiento y sus opciones de configuración.
+
+Para instalar el servicio DNS hemos utilizado una máquina virtual con Ubuntu Server 22.04, configurada con la dirección IP fija 192.168.6.100, lo que permite que los dispositivos de la red encuentren siempre el servidor DNS. La máquina virtual tiene 1 GB de memoria RAM, un procesador, 16 GB de disco duro y una configuración de red con IP fija para asegurar el correcto funcionamiento del servicio.
+
+Antes de instalar Pi-hole, hemos actualizado el sistema operativo usando los comandos apt update y apt upgrade para tener el sistema al día. Después, hemos instalado Pi-hole usando el instalador oficial con el comando curl -sSL https://install.pi-hole.net
+ | bash. Durante la instalación hemos elegido la tarjeta de red correcta, hemos confirmado la dirección IP del servidor y hemos seleccionado un servidor DNS externo que Pi-hole usa como apoyo. También hemos configurado las opciones básicas del DNS y hemos activado el panel web de administración.
+
+Cuando terminó la instalación, hemos establecido una contraseña para entrar al panel web de Pi-hole con el comando pihole -a -p, lo que nos permitió gestionar el servicio de forma gráfica y sencilla. Por último, hemos configurado la dirección IP 192.168.6.100 como servidor DNS en el router o directamente en los dispositivos de la red, haciendo que todas las consultas DNS pasen por Pi-hole y se aplique el bloqueo de publicidad automáticamente.
+
+La única incidencia que nos apareció durante la configuración fue al usar netplan, ya que los errores en los espacios del archivo provocaban fallos en la red. Este problema lo solucionamos corrigiendo la estructura del archivo y respetando los espacios necesarios, y después de eso el servicio DNS funcionó correctamente.
+
+**Configuración del servicio DCHP con Pi-hole**
   
 </details>
   
