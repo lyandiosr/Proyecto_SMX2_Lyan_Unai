@@ -488,7 +488,7 @@ Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfect
 - El DHCP es necesario porque facilita la conexión de los dispositivos a la red, evita errores de configuración manual y permite una mejor gestión de las direcciones IP disponibles.
 
 **¿Dónde hay información oficial?**
-- Nosotros hemos sacado la información ofical que no ha ayudado a hacer el DNS es la de pi-hole https://pi-hole.net/
+- Nosotros hemos sacado la información ofical que tambien nos ha ayudado a hacer el DNS es la de pi-hole https://pi-hole.net/
 
 **Instalación del servicio DHCP**
 - El servicio DHCP se configura en Pi-hole desde el panel de administración web. Se establece un rango de direcciones IP desde 192.168.6.120 hasta 192.168.6.130, con puerta de enlace 192.168.6.1 y máscara de red 255.255.255.0.
