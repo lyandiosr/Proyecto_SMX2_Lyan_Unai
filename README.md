@@ -435,6 +435,8 @@ Por estas razones es perfecto para alojar una web como Edutask.
 Nuestro dominio es “edutask.tallerdekirby.es”, un derivado de “tallerdekirby.es” 
 Esta web está gestionada por cloudflare para proporcionar seguridad, rendimiento y configuración avanzada de DNS.
 
+---
+
 ### **2. Base de datos**
 #### **MySQL**
 Es una base de datos perfecta para nuestro proyecto Edutask, ya que nos permite guardar usuarios, clases, tareas, los estados de estas, notas y preferencias.
@@ -460,24 +462,7 @@ Rsync se usa para automatizar copias de seguridad y sincronizar directorios entr
 #### **Pi-hole:**
 Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfectas para el proyecto es que filtra la publicidad, acelera la navegación, también puede gestionar dominios locales y facilita el acceso a los servidores.
 
-**¿Por qué es necesario?**
-- El DNS es necesario para poder navegar por Internet de forma normal, sin él DNS habría que usar direcciones IP en lugar de nombres. Pi-hole mejora la navegación al reducir la publicidad, aumentar la privacidad y disminuir el uso de ancho de banda.
 
-**¿Dónde hay información oficial?**
--  La información oficial sobre el DNS está en la dirección URL : https://pi-hole.net/
-
-**Instalación del servicio DNS**
-- El servicio DNS se instala en una máquina virtual con Ubuntu Server configurada con la dirección IP estática 192.168.6.100. La instalación se hace con el Pi-hole, donde se selecciona la interfaz de red y se configuran las opciones  básicas del DNS.
-
-**Detalles de la máquina virtual**
-- La máquina virtual que hemos utilizado tiene Ubuntu Server 22.04, 1 GB de memoria RAM, 1 procesador, 16 GB de disco y una configuración de red con IP fija para que  funcione el servicio DNS.
-
-**Pasos a seguir**
-- Primero hemos actualizado el sistema operativo, después  instalamos el  Pi-hole, se configura la contraseña del panel web y despues se pone  la dirección IP 192.168.6.100 como servidor DNS en el router o en los dispositivos de la red.
-
-**Incidencias**
-- Nosotros mientras estabamos configurado el netplan tuvimos problemas con los espacios de las columnas eso hacia que nos diera varios errores porque el sistema si no es con los espacios que pide no lo lee bien esa es la unica incidencia que tuvimos.
-  
 ---
 
 ### **5. DHCP Server**
