@@ -464,7 +464,7 @@ Pi-hole actúa como servidor DNS interno. Otras funciones que nos vienen perfect
 - El DNS es necesario para poder navegar por Internet de forma normal, sin él DNS habría que usar direcciones IP en lugar de nombres. Pi-hole mejora la navegación al reducir la publicidad, aumentar la privacidad y disminuir el uso de ancho de banda.
 
 **¿Dónde hay información oficial?**
--  Nosotros hemos sacado la información ofical que no ha ayudado a hacer el DNS es la de pi-hole https://pi-hole.net/
+-  La información ofical sobre el DNS está en la dirección URL : https://pi-hole.net/
 
 **Instalación del servicio DNS**
 - El servicio DNS se instala en una máquina virtual con Ubuntu Server configurada con la dirección IP estática 192.168.6.100. La instalación se hace con el Pi-hole, donde se selecciona la interfaz de red y se configuran las opciones  básicas del DNS.
