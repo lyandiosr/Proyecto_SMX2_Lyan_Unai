@@ -588,10 +588,11 @@ pfSense es un firewall profesional open-source. Puede proteger los servicios int
   <summary><h2> Servicios</h2></summary>
 <details>
   <summary><strong> DNS y DHCP Pi-hole</strong></summary>
-  
-**Configuración del servicio DNS con Pi-hole**
 
-- Pi-hole funciona como un servidor DNS dentro de nuestra red. Además de traducir los nombres de las páginas web, ofrece funciones muy útiles para nuestro proyecto, como el bloqueo de publicidad, una navegación más rápida, mayor privacidad y un menor consumo de datos. También nos permite gestionar dominios locales y facilita el acceso a los servidores de la red.
+  
+## Configuración del servicio DNS con Pi-hole
+
+ Pi-hole funciona como un servidor DNS dentro de nuestra red. Además de traducir los nombres de las páginas web, ofrece funciones muy útiles para nuestro proyecto, como el bloqueo de publicidad, una navegación más rápida, mayor privacidad y un menor consumo de datos. También nos permite gestionar dominios locales y facilita el acceso a los servidores de la red.
 
 El servidor DNS es necesario para poder navegar por Internet de forma normal, ya que se encarga de convertir los nombres de las páginas web en direcciones IP. Sin un DNS, tendríamos que usar directamente las direcciones IP, lo que haría la navegación más complicada. Pi-hole mejora la experiencia de uso al reducir la publicidad, aumentar la privacidad y disminuir el uso de ancho de banda.
 
@@ -607,9 +608,9 @@ Cuando terminó la instalación, hemos establecido una contraseña para entrar a
 
 La única incidencia que nos apareció durante la configuración fue al usar netplan, ya que los errores en los espacios del archivo provocaban fallos en la red. Este problema lo solucionamos corrigiendo la estructura del archivo y respetando los espacios necesarios, y después de eso el servicio DNS funcionó correctamente.
 
-**Configuración del servicio DCHP con Pi-hole**
+## Configuración del servicio DCHP con Pi-hole
 
-- El servicio DHCP es un servicio de red que se encarga de dar direcciones IP y otros datos de red de forma automática a los dispositivos que se conectan a la red. Gracias al DHCP, los equipos pueden conectarse y comunicarse sin tener que configurar la red a mano.
+El servicio DHCP es un servicio de red que se encarga de dar direcciones IP y otros datos de red de forma automática a los dispositivos que se conectan a la red. Gracias al DHCP, los equipos pueden conectarse y comunicarse sin tener que configurar la red a mano.
 
 El servicio DHCP es necesario porque hace más fácil la conexión de los dispositivos a la red, evita errores al poner las direcciones IP manualmente y ayuda a organizar mejor las direcciones IP disponibles.
 
