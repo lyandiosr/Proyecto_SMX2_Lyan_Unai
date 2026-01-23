@@ -991,7 +991,13 @@ https://github.com/user-attachments/assets/b346ac8d-bbca-4d08-afb0-dd93cc8cea40
 
 **(4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo**
 
-El programa permite controlar una barra de LEDs conectada a un Arduino, creando un efecto de movimiento tipo KITT, donde los LEDs se encienden de izquierda a derecha y luego regresan en sentido contrario.
+
+<p align="center">
+  <img src="image.png" alt="kn" width="300">
+
+
+
+- El programa permite controlar una barra de LEDs conectada a un Arduino, creando un efecto de movimiento tipo KITT, donde los LEDs se encienden de izquierda a derecha y luego regresan en sentido contrario.
 
 **(5) Video de la practica**
 
