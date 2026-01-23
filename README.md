@@ -989,6 +989,11 @@ https://github.com/user-attachments/assets/b346ac8d-bbca-4d08-afb0-dd93cc8cea40
 
 **(3) Esquema del circuito como se muestra mas abajo**
 
+<p align="center">
+  <img src="IMG_9986.jpeg" alt="kn" width="300">
+  
+
+
 **(4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo**
 
 
