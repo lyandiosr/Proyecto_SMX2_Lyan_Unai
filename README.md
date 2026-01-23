@@ -1002,7 +1002,8 @@ https://github.com/user-attachments/assets/0f8fb3c2-b889-41dd-b76c-c303a116f00d
 
 
 **(6) Imagen para la entrada del blog o proyecto**
-
+<p align="center">
+  <img src="IMG_9984.jpeg" alt="kn" width="300">
   
 </details>
 </details>
