@@ -955,6 +955,7 @@ Cables de conexión (jumper wires) Función: Transportan la señal eléctrica de
 (3) Esquema del circuito como se muestra mas abajo
 
 (4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo
+<p align="center">
   <img src="Captura de pantalla 2026-01-16 134902.png" alt="kn" width="300">
   
 (5) Video de la practica
@@ -964,7 +965,46 @@ https://github.com/user-attachments/assets/b346ac8d-bbca-4d08-afb0-dd93cc8cea40
 
 
 </details>
- 
+ </p>
+<details>
+ <summary><h2>A4-LED Bar </h2></summary>
+  
+**(1) Objetivo de la práctica**
+
+- Poner en funcionamiento una barra de LEDs y experimentando con efectos de iluminación como el movimiento tipo “Kitt”, de izquierda a derecha con rebote en bucle
+
+**(2) Material y explicacion de cada componente**
+
+- Placa Arduino (ESP32 / Wrover)
+
+- Barra de LEDs (10 LEDs integrados)
+
+- Resistencias de 220 Ω (una por cada LED de la barra)
+
+- Protoboard
+
+- Cables de conexión (jumpers)
+
+
+
+**(3) Esquema del circuito como se muestra mas abajo**
+
+**(4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo**
+
+El programa permite controlar una barra de LEDs conectada a un Arduino, creando un efecto de movimiento tipo KITT, donde los LEDs se encienden de izquierda a derecha y luego regresan en sentido contrario.
+
+**(5) Video de la practica**
+
+<p align="center">
+
+https://github.com/user-attachments/assets/0f8fb3c2-b889-41dd-b76c-c303a116f00d
+
+
+
+**(6) Imagen para la entrada del blog o proyecto**
+
+  
+</details>
 </details>
 
 
