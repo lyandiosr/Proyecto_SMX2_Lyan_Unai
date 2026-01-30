@@ -1017,8 +1017,35 @@ https://github.com/user-attachments/assets/0f8fb3c2-b889-41dd-b76c-c303a116f00d
   <img src="IMG_9984.jpeg" alt="kn" width="300">
   
 </details>
+
+ </p>
+<details>
+ <summary><h2>A5 - Serial IO </h2></summary>
+
+**6.1) Comunicación Serial**
+
+**¿Qué aparece en el Serial Monitor?**
+- Aparecen mensajes de texto enviados por la placa ESP32. Muestran información del programa mientras se está ejecutando.
+
+ **Pulsa BOOT + EN, ¿qué ocurre? Pulsa solo EN, ¿para qué sirve?**
+ -  BOOT + EN: la placa entra en modo programación para subir el código.
+ -  Solo EN: la placa se reinicia y el programa empieza de nuevo.
+    Sirve para reiniciar la placa o cargar un nuevo programa.
+
+**¿Qué indica Serial.begin(115200);?**
+-  Inicia la comunicación serial a una velocidad de 115200 baudios entre el ESP32 y el ordenador.
+
+**¿Qué significa "%.1f s\n"?**
+ - Muestra un número con un decimal, la letra s (segundos) y un salto de línea.
+
+
+
 </details>
 
+ </p>
+<details>
+ <summary><h2>A6-Wifi </h2></summary>
+ 
 
   
 
