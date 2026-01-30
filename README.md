@@ -1022,7 +1022,7 @@ https://github.com/user-attachments/assets/0f8fb3c2-b889-41dd-b76c-c303a116f00d
 <details>
  <summary><h2>A5 - Serial IO </h2></summary>
 
-**6.1) Comunicación Serial**
+## **5.1) Comunicación Serial**
 
 **¿Qué aparece en el Serial Monitor?**
 - Aparecen mensajes de texto enviados por la placa ESP32. Muestran información del programa mientras se está ejecutando.
@@ -1039,6 +1039,53 @@ https://github.com/user-attachments/assets/0f8fb3c2-b889-41dd-b76c-c303a116f00d
  - Muestra un número con un decimal, la letra s (segundos) y un salto de línea.
 
 
+## **5.2) Panel LCD1602**
+
+**(1) Objetivo de la practica**
+- Aprender a conectar y usar una pantalla LCD1602 con I2C para mostrar mensajes desde el ESP32 utilizando pocos pines.
+
+**(2) Material y explicacion de cada componente**
+- ESP32 (Arduino): controla la pantalla y envía los datos.
+- Pantalla LCD1602 con I2C: muestra texto en 2 filas de 16 caracteres.
+- Módulo I2C (PCF8574): reduce el número de pines necesarios para la pantalla.
+- Jumpers hembra-macho (4): sirven para hacer las conexiones.
+
+**(3) Esquema del circuito como se muestra mas abajo**
+
+<p align="center">
+  <img src="" width="300">
+
+**(4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo**
+
+<p align="center">
+  <img src="" alt="kn" width="300">
+
+**(5) Video de la practica**
+
+
+
+**(6) Imagen para la entrada del blog o proyecto**
+
+<p align="center">
+  <img src="" alt="kn" width="300">
+
+**¿Para qué sirve cada conexión?**
+- SCL: controla el ritmo de la comunicación I2C.
+- SDA: envía los datos a la pantalla.
+- VCC: alimenta la pantalla.
+- GND: tierra del circuito.
+
+**¿Qué hace lcd.print() y lcd.clear()?**
+- lcd.print(): escribe texto en la pantalla.
+- lcd.clear(): borra toda la pantalla.
+
+**¿Cómo mover el texto?**
+- lcd.scrollDisplayLeft(): mueve el texto a la izquierda.
+- lcd.scrollDisplayRight(): mueve el texto a la derecha.
+
+
+
+  
 
 </details>
 
