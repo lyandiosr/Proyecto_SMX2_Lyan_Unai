@@ -1052,22 +1052,26 @@ https://github.com/user-attachments/assets/0f8fb3c2-b889-41dd-b76c-c303a116f00d
 
 **(3) Esquema del circuito como se muestra mas abajo**
 
-<p align="center">
-  <img src="" width="300">
+
+  
 
 **(4) How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo**
 
 <p align="center">
-  <img src="" alt="kn" width="300">
+  <img src="codigo pantalla.png" alt="kn" width="300">
 
 **(5) Video de la practica**
+
+
+
+https://github.com/user-attachments/assets/08e0cc64-127b-49f9-9a1b-22a12e503568
 
 
 
 **(6) Imagen para la entrada del blog o proyecto**
 
 <p align="center">
-  <img src="" alt="kn" width="300">
+  <img src="IMG_1673.jpg" alt="kn" width="300">
 
 **¿Para qué sirve cada conexión?**
 - SCL: controla el ritmo de la comunicación I2C.
