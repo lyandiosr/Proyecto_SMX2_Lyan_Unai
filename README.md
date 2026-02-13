@@ -1097,44 +1097,37 @@ https://github.com/user-attachments/assets/08e0cc64-127b-49f9-9a1b-22a12e503568
 <details>
  <summary><h2>A6-Wifi </h2></summary>
  
-#include <LiquidCrystal_I2C.h>
-#include <Wire.h>
-
-#define SDA 14 //Define SDA pins
-#define SCL 13 //Define SCL pins
+**(1) Objetivo de la practica**
+Aprender a utilizar la conectividad WiFi del ESP32-S3 WROOM.
+Comprender los tres modos de funcionamiento WiFi de Station Mode,Access Point (AP) Mode, AP + Station Mode, Crear y alojar una página web en el ESP32. Entender el uso de librerías como WiFi.h y WebServer.h.Comprobar la conectividad entre dispositivos mediante IP.
 
 
-/*
- * note:If lcd1602 uses PCF8574T, IIC's address is 0x27,
- * or lcd1602 uses PCF8574AT, IIC's address is 0x3F.
- */
-LiquidCrystal_I2C lcd(0x27,16,2);
-void setup() {
-  Wire.begin(SDA, SCL); // attach the IIC pin
-  if (!i2CAddrTest(0x27)) {
-    lcd = LiquidCrystal_I2C(0x3F, 16, 2);
-  }
-  lcd.init(); // LCD driver initialization
-  lcd.backlight(); // Open the backlight
-  lcd.setCursor(0,0); // Move the cursor to row 0, column 0
-  lcd.print("hello, world!"); // The print content is displayed on the LCD
-}
 
-void loop() {
-  lcd.setCursor(0,1); // Move the cursor to row 1, column 0
-  lcd.print("Counter:"); // The count is displayed every second
-  lcd.print(millis() / 1000);
-  delay(1000);
-}
+**(2) Material y explicacion de cada componente**
+ 1. ESP32-S3 WROOM
+Microcontrolador con conectividad WiFi y Bluetooth integrada. Permite actuar como cliente WiFi o como punto de acceso.
+2. Cable USB
+Permite alimentar el ESP32 y cargar el programa desde el ordenador.
+ 3. Ordenador
+Para programar mediante el Arduino IDE y visualizar el Monitor Serie.
+ 4. Router WiFi
+Proporciona acceso a red e Internet en modo Station.
+ 5. Navegador Web
+Para acceder a la página alojada en el ESP32 mediante su IP.
 
-bool i2CAddrTest(uint8_t addr) {
-  Wire.beginTransmission(addr);
-  if (Wire.endTransmission() == 0) {
-    return true;
-  }
-  return false;
-}
-  
+
+
+
+
+
+**How To + Codigo explicado: uso de las variables, funciones y demas componentes del codigo**
+
+<p align="center">
+  <img src="Captura de pantalla 2026-02-13 132506.png" alt="kn" width="300">
+
+
+
+
 
 
 
