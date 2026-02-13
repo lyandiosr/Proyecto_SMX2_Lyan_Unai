@@ -1124,7 +1124,10 @@ Para acceder a la página alojada en el ESP32 mediante su IP.
 
 <p align="center">
   <img src="Captura de pantalla 2026-02-13 132506.png" alt="kn" width="300">
-
+  
+  <p align="center">
+  <img src="tfgbnjkiu.png" alt="kn" width="300">
+.
 
 
 
