@@ -624,9 +624,14 @@ La máquina virtual donde tenemos instalado Pi-hole usa Ubuntu Server 22.04, tie
 Para realizar la configuración, primero entramos al panel web de Pi-hole desde un navegador. Después activamos el servicio DHCP y configuramos el rango de direcciones IP 192.168.6.120 a 192.168.6.130, la puerta de enlace 192.168.6.1 y la máscara de red 255.255.255.0. Por último, guardamos los cambios para que los dispositivos que se conecten a la red reciban la configuración automáticamente.
 
 Durante la configuración del servicio DHCP no hemos tenido ningún problema, ya que todo funcionó correctamente desde el principio.
+
+
   
+
+ </details>
+   <details>
+  <summary><strong> Apache/PHP</strong></summary>
 </details>
-  
 </details>
 
 ---
