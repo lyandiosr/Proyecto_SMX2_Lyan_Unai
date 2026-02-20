@@ -1153,6 +1153,90 @@ Para acceder a la página alojada en el ESP32 mediante su IP.
   
   <p align="center">
   <img src="tfgbnjkiu.png" alt="kn" width="300">
+
+    
+**¿A qué red te has podido conectar? ¿Es 5G, 2.4G? Explica.**
+-  A una red 2.4 GHz, porque el ESP32 solo funciona en esa frecuencia.
+
+
+**¿Son necesarias las tres librerías?**
+-  No. Solo hace falta WiFi.h.
+
+
+**¿Cuándo usar WiFiClient.h y WiFiClientSecure.h?**
+
+- WiFiClient.h: para conexiones TCP normales (HTTP, MQTT).
+- WiFiClientSecure.h: para conexiones seguras (HTTPS).
+
+
+**¿Es posible seleccionar el canal WiFi?**
+-  En modo estación no, porque lo decide el router. Solo en modo AP.
+
+
+**Prueba la conectividad con la IP del ESP32.**
+-  Sí, accediendo a la IP desde el navegador o haciendo ping desde el PC o móvil con Arduino.
+
+
+
+**¿Uso de softAPConfig?**
+-  Configurar IP, gateway y máscara del ESP32 como punto de acceso.
+
+
+**¿Cómo saber cuántos dispositivos hay conectados?**
+-  WiFi.softAPgetStationNum();
+
+
+**¿Método para ver la IP del AP?**
+-  WiFi.softAPIP();
+
+
+**¿Para qué sirve c_str()?**
+ - Para convertir un String a texto tipo C (char*).
+
+
+
+**Compila y testea la conexión.**
+ - El ESP32 se conecta al router y también crea su propia red al mismo tiempo.
+
+
+**Código para acceder a la web.**
+
+
+#include <WebServer.h>
+WebServer server(80);
+
+server.on("/", handle_OnConnect);
+server.onNotFound(handle_NotFound);
+server.begin();
+
+void loop(){
+ server.handleClient();
+}
+
+
+**Explica los parámetros.**
+
+
+200 / 404: código de respuesta (bien / error).
+
+
+text/html / text/plain: tipo de contenido.
+
+
+Mensaje: lo que recibe el navegador.
+
+
+Código del servidor y cambiar puerto.
+
+
+WebServer server(8080);
+
+server.on("/", handle_OnConnect);
+server.onNotFound(handle_NotFound);
+server.begin();
+
+
+
 .
 
 
