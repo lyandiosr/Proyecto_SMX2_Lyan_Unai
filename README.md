@@ -637,7 +637,9 @@ Configuración del servidor web Apache 2 y PHP
 Apache 2 es un programa que sirve para crear un servidor web, es decir, para poder ver páginas web desde otros dispositivos de la red o desde Internet. PHP es un lenguaje que funciona junto con Apache y sirve para hacer páginas web que cambian según lo que haga el usuario o según la información que tenga el servidor. Gracias a Apache y PHP podemos crear y probar páginas y servicios para nuestro proyecto.
 
 Apache 2 y PHP son necesarios porque nos permiten tener nuestro propio servidor web donde guardar páginas, hacer pruebas y facilitar el acceso a los servicios desde la red. También nos sirve si necesitamos una página para controlar cosas del sistema o enseñar información del proyecto.
-
+ <p align="center">
+<img src="Captura de pantalla 2026-02-20 095619.png" alt="Diagrama de la red" width="700">
+  </p>
 La información oficial sobre Apache y PHP se puede encontrar en sus páginas oficiales, como las de Apache Software Foundation y The PHP Group, donde explican cómo funcionan y cómo instalarlos.
 
 Para la instalación hemos usado un sistema Debian. Primero hemos actualizado el sistema usando los comandos apt update y apt upgrade para tener todo al día. Después hemos instalado Apache 2 con el comando apt install apache2 y comprobamos que funcionaba entrando desde un navegador con la dirección IP del servidor. Cuando vimos la página que aparece por defecto, supimos que estaba bien instalado.
@@ -645,7 +647,9 @@ Para la instalación hemos usado un sistema Debian. Primero hemos actualizado el
 Luego hemos instalado PHP y lo necesario para que funcione con Apache usando el comando apt install php libapache2-mod-php. Después reiniciamos Apache para aplicar los cambios. Para comprobar que PHP funcionaba bien, hicimos un archivo de prueba dentro de la carpeta del servidor web con una página sencilla y entramos desde el navegador para ver que se mostraba correctamente.
 
 Gracias a esta instalación, ahora tenemos un servidor web con Apache 2 y PHP, lo que nos permite crear páginas web que funcionan y servicios para nuestro proyecto.
-
+ <p align="center">
+<img src="Captura de pantalla 2026-02-20 100005.png" alt="Diagrama de la red" width="700">
+  </p>
 Durante la instalación hemos tenido un problema con PHP, porque después de terminar no se abría la página en el navegador y pensábamos que no funcionaba. Al final vimos que el problema no era de la instalación, sino que estábamos escribiendo mal la dirección en el navegador. Cuando pusimos la dirección correcta del servidor con el archivo de prueba, la página se abrió sin problemas y comprobamos que PHP funcionaba bien.
      
 </details>
