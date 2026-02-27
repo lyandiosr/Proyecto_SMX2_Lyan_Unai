@@ -766,8 +766,96 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
 
 ---
 <details>
-  
   <summary><h2> Arduino</h2></summary>
+
+  <details>
+  <summary><h2>Proyecto</h2></summary>
+
+   <details>
+  <summary><h2>Briefing</h2></summary>
+     # Winston To-Go: Dispensador Automático con Arduino 🚬🤖
+
+**Winston To-Go** es un sistema de dispensación automatizada diseñado bajo un concepto de "conveniencia urbana". Este proyecto combina una estética de marca clásica con hardware interactivo para crear un prototipo funcional.
+
+---
+
+## 1. Presentación de la Idea
+El dispositivo cuenta con un sistema de doble activación para la entrega del producto:
+* **Modo Comercial:** Activado mediante una moneda a través de un sensor óptico de herradura.
+* **Modo Propietario (Cortesía):** Activado mediante un sensor infrarrojo (IR) de proximidad para una entrega sin contacto y gratuita.
+El mecanismo principal utiliza un micro servomotor para desplazar una unidad de producto a través de la ranura de salida.
+
+## 2. Objetivos del Proyecto
+* **Objetivo Principal:** Construir un prototipo de dispensador funcional capaz de distinguir entre el ingreso de una moneda y una activación por proximidad, entregando el producto en menos de 3 segundos.
+* **Desarrollo de Habilidades:**
+    * **Programación en C++:** Gestión de lógica condicional para múltiples entradas de sensores.
+    * **Mecatrónica:** Sincronización de un servomotor con señales digitales y analógicas.
+    * **Branding:** Aplicación de una identidad visual (Winston To-Go) a un objeto físico funcional.
+
+## 3. Requisitos Técnicos
+
+### Hardware
+* **Microcontrolador:** Arduino UNO (R3 o compatible).
+* **Actuador:** Micro servomotor SG90 (9g).
+* **Sensores:** * Sensor óptico de herradura (para detección de monedas).
+    * Sensor infrarrojo de proximidad FC-51.
+* **Alimentación:** Batería de 9V (con adaptador Jack) o cable USB de 5V.
+* **Conectividad:** Cables Jumper (M-M / M-H) y protoboard de 400 puntos.
+
+### Software
+* **Entorno:** Arduino IDE (v2.0 o superior).
+* **Librerías:** `<Servo.h>` (Librería estándar de Arduino).
+
+## 4. Metodología de Trabajo
+1. **Fase de Diseño:** Dibujo de planos y cálculo de dimensiones para la ranura de salida.
+2. **Montaje del Circuito:** Conexión de sensores y servomotor en la protoboard.
+3. **Programación Inicial:** Carga del código base y calibración de los ángulos del servo.
+4. **Construcción del Chasis:** Corte y ensamblaje de la estructura externa y el depósito.
+5. **Integración Mecánica:** Montaje del motor y ajuste del brazo empujador.
+6. **Pruebas de Campo:** Testeo de detección de monedas y sensibilidad del sensor IR.
+7. **Branding Final:** Aplicación de los acabados visuales de **Winston To-Go**.
+
+## 5. Desafíos y Soluciones
+* **Desafío:** Atascos en la ranura de salida por fricción.
+    * *Solución:* Diseño del canal con inclinación y forrado interior con cinta de baja fricción.
+* **Desafío:** Falsos positivos en el sensor de monedas por luz ambiental.
+    * *Solución:* Encapsular el sensor en un canal oscuro para aislarlo de la luz externa.
+* **Desafío:** Alimentación insuficiente para el servo.
+    * *Solución:* Añadir un condensador de 100µF entre VCC y GND o usar una fuente de 5V dedicada al motor.
+  </details>
+  
+  <details>
+  <summary><h2>Listado de tareas</h2></summary>
+  
+### Fase 1: Diseño y Planificación
+**Esquema de Conexiones:** Definir los pines de la placa para el botón y el servo.
+**Unai:** Preparación del esquema eléctrico.
+***Lyan:** Organización y etiquetado de cables jumpers.
+
+### Fase 2: Hardware y Programación
+***Montaje del Circuito:** Conectar el botón y el servomotor a la placa Arduino.
+***Unai:Conexión del servomotor y alimentación de la placa.
+***Lyan:** Conexión del pulsador (configuración `INPUT_PULLUP`).
+**Código y Calibración:** Programar el movimiento del servo al presionar el botón.
+***Unai:** Programación de la lógica "si botón pulsado, mover servo".
+***Lyan:** Calibración de los ángulos de giro (inicio, empuje y retorno).
+
+### Fase 3: Construcción Física (En proceso 🛠️)
+**Corte y Estructura:** Cortar el material (cartón/madera) y armar la caja.
+***Unai:** Corte de las piezas del chasis exterior.
+***Lyan:** Montaje de la rampa interna y el canal de salida.
+**Mecanismo de Empuje:** Unir el servo al brazo empujador dentro de la estructura.
+***Unai:** Instalación y fijación del servomotor.
+***Lyan:** Ajuste del brazo mecánico para asegurar que solo salga una unidad.
+
+### Fase 4: Branding y Acabados
+**Identidad Visual:** Aplicar la estética de "Winston To-Go".
+***Unai:** Diseño e impresión de las etiquetas y logotipos.
+***Lyan:** Aplicación de vinilos y pintura/acabado exterior del dispensador.
+**Test Final de Calidad:** Pruebas de funcionamiento real.
+***Unai: Pruebas de resistencia del mecanismo (10 usos seguidos).
+***Lyan: Verificación de posibles atascos y ajustes finales.
+</details>
   
 <p align="center">
 <img src="images.jpg" alt="Mi banner" width="800" height="200">
