@@ -655,6 +655,26 @@ Durante la instalación hemos tenido un problema con PHP, porque después de ter
 </details>
  <details>
   <summary><strong> Servidor MySql</strong></summary>
+ 
+- MySQL es un servidor de bases de datos que sirve para guardar y organizar información. Los datos se guardan en tablas dentro de la base de datos y luego pueden ser usados por programas o páginas web. Normalmente se usa junto con servidores web y con PHP para crear páginas web dinámicas. Por ejemplo, una página web puede guardar usuarios o información en la base de datos y después mostrarla cuando sea necesario.
+
+
+- La función del servidor MySQL dentro de la red es guardar y gestionar datos para las aplicaciones o páginas web que lo necesiten. De esta forma se pueden guardar datos de forma ordenada y después consultarlos cuando haga falta. En nuestro proyecto, MySQL dará servicio a las aplicaciones o páginas que necesiten trabajar con datos.
+
+
+Nosotros hemos instalado el servidor MySQL en una máquina virtual con Ubuntu Server. La máquina tiene: 
+- Adaptador puente 
+-  Disco de 50 GB
+- 2 GB de RAM 
+- 2 de CPU
+
+- Para instalar MySQL primero hemos actualizado el sistema usando los comandos **sudo apt update y sudo apt upgrade**. Después hemos instalado el servicio usando el comando **sudo apt install mysql-server**.
+
+- Hemos  creado  un usuario nuevo para poder usar nuestra base de datos. Para hacerlo tenemos que entrar a MySQL y usar el comando **CREATE USER 'edutask'@'localhost' IDENTIFIED BY 'my_password'** para crear el usuario con contraseña. Después puesto  el comando **GRANT ALL PRIVILEGES ON . TO 'edutask'@'localhost' WITH GRANT OPTION** para darle permisos al usuario y que pueda trabajar con las bases de datos. Finalmente se puede salir del programa con el comando **EXIT**.Es necesario crear un nuevo usuario en MySQL porque no es recomendable usar siempre el usuario administrador (root) para trabajar con las bases de datos. El usuario root tiene todos los permisos del sistema y si se usa para todo puede ser un problema de seguridad.
+
+- Por eso se crea un usuario nuevo, en nuestro caso edutask, para que sea el que use la aplicación o la base de datos del proyecto. De esta forma se pueden controlar mejor los permisos y limitar lo que puede hacer cada usuario dentro del servidor.
+
+Gracias a esta configuración podremos usar MySQL en nuestro proyecto para guardar y gestionar datos de forma organizada.
 </details>
 
 <details>
