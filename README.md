@@ -658,6 +658,10 @@ Durante la instalación hemos tenido un problema con PHP, porque después de ter
 </details>
 
 <details>
+  <summary><strong>Truenas</strong></summary>
+</details>
+
+<details>
   <summary><strong>IA Tutor Inteligente</strong></summary>
 </details>
 </details>
