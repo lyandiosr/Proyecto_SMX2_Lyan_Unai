@@ -651,9 +651,17 @@ Gracias a esta instalación, ahora tenemos un servidor web con Apache 2 y PHP, l
 <img src="Captura de pantalla 2026-02-20 100005.png" alt="Diagrama de la red" width="700">
   </p>
 Durante la instalación hemos tenido un problema con PHP, porque después de terminar no se abría la página en el navegador y pensábamos que no funcionaba. Al final vimos que el problema no era de la instalación, sino que estábamos escribiendo mal la dirección en el navegador. Cuando pusimos la dirección correcta del servidor con el archivo de prueba, la página se abrió sin problemas y comprobamos que PHP funcionaba bien.
-     
+
+</details>
+ <details>
+  <summary><strong> Servidor MySql</strong></summary>
+</details>
+
+<details>
+  <summary><strong>IA Tutor Inteligente</strong></summary>
 </details>
 </details>
+
 
 ---
 <details>
