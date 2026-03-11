@@ -679,6 +679,58 @@ Gracias a esta configuración podremos usar MySQL en nuestro proyecto para guard
 
 <details>
   <summary><strong>Truenas</strong></summary>
+
+TrueNAS es un sistema operativo que se usa para crear un servidor de almacenamiento en red (NAS). Sirve para guardar archivos en un solo lugar y poder acceder a ellos desde diferentes dispositivos dentro de la misma red.
+
+Entre sus características principales está que permite compartir archivos en la red, gestionar usuarios y permisos y guardar copias de seguridad. Además, tiene una interfaz web que facilita mucho su configuración y administración.
+
+Para instalar TrueNAS hemos creado una máquina virtual en VirtualBox. En la configuración seleccionamos como sistema operativo **BSD de 64 bits**. También configuramos la red en **adaptador puente** para poder acceder a la máquina desde otros equipos de la red. Usamos la ISO **TrueNAS Core** para hacer la instalación.
+
+La máquina virtual la configuramos con **4 GB de RAM y tres discos duros**. Uno de los discos se usa para instalar el sistema operativo y los otros dos se dejan libres para poder crear más adelante un sistema de almacenamiento **RAID1**. Durante la instalación seleccionamos el disco donde se instala el sistema y elegimos el **modo de arranque BIOS**. Cuando termina la instalación reiniciamos la máquina virtual y quitamos la ISO.
+
+Después de reiniciar aparece el menú principal de TrueNAS. A partir de ese momento podemos entrar desde un navegador web usando la dirección de la máquina virtual para configurar el sistema y sus servicios.
+
+En nuestro proyecto utilizamos TrueNAS para guardar y compartir archivos dentro de la red, de forma que los equipos del proyecto puedan acceder a ellos cuando sea necesario.
+
+
+## Servicios del proyecto
+
+| Servidor | Servicio | Directorio + Archivo de configuración |
+|----------|----------|---------------------------------------|
+| Ubuntu Server | DNS (Pi-hole) | /etc/pihole/ |
+| Ubuntu Server | DHCP (Pi-hole) | /etc/dnsmasq.d/ |
+| Debian | Apache2 | /etc/apache2/apache2.conf |
+| Debian | PHP | /etc/php/ |
+| Ubuntu Server | MySQL | /etc/mysql/mysql.conf.d/mysqld.cnf |
+| TrueNAS | Almacenamiento NAS | Configuración desde la interfaz web |
+
+
+
+## Copias de seguridad con TrueNAS
+
+Para nuestro proyecto, necesitamos guardar copias de los datos importantes de los servidores:
+
+- **Base de datos MySQL** 
+
+
+- **Archivos de configuración de Apache**  
+  
+
+- **Archivos de configuración de PHP**  
+   
+
+- **Configuración de Pi-hole (DNS y DHCP)**  
+   
+
+- **Archivos del servidor web**  
+  
+
+- **Documentación y archivos del proyecto**  
+  
+
+- **Copias de seguridad generales**  
+
+  
 </details>
 
 <details>
