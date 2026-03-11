@@ -857,7 +857,8 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
 
    <details>
   <summary><h2>Briefing</h2></summary>
-     # Winston To-Go: Dispensador Automático con Arduino 🚬🤖
+    
+  **Winston To-Go**: Dispensador Automático con Arduino 🚬🤖
 
 **Winston To-Go** es un sistema de dispensación automatizada diseñado bajo un concepto de "conveniencia urbana". Este proyecto combina una estética de marca clásica con hardware interactivo para crear un prototipo funcional.
 
