@@ -858,7 +858,7 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
    <details>
   <summary><h2>Briefing</h2></summary>
     
-  **Winston To-Go**: Dispensador Automático con Arduino 🚬🤖
+  **Winston To-Go**: Dispensador Automático con Arduino 🚬
 
 **Winston To-Go** es un sistema de dispensación automatizada diseñado bajo un concepto de "conveniencia urbana". Este proyecto combina una estética de marca clásica con hardware interactivo para crear un prototipo funcional.
 
@@ -882,7 +882,8 @@ El mecanismo principal utiliza un micro servomotor para desplazar una unidad de 
 ### Hardware
 * **Microcontrolador:** Arduino UNO (R3 o compatible).
 * **Actuador:** Micro servomotor SG90 (9g).
-* **Sensores:** * Sensor óptico de herradura (para detección de monedas).
+* **Sensores:**
+    * Sensor óptico de herradura (para detección de monedas).
     * Sensor infrarrojo de proximidad FC-51.
 * **Alimentación:** Batería de 9V (con adaptador Jack) o cable USB de 5V.
 * **Conectividad:** Cables Jumper (M-M / M-H) y protoboard de 400 puntos.
@@ -941,11 +942,40 @@ El mecanismo principal utiliza un micro servomotor para desplazar una unidad de 
 ***Unai: Pruebas de resistencia del mecanismo (10 usos seguidos).
 ***Lyan: Verificación de posibles atascos y ajustes finales.
 </details>
+
+
+
+<details>
+<summary><h2>Esquema eléctrico y materiales utilizados</h2></summary>
+
+- En esta imagen podemos ver el esquema de conexiones del sistema electrónico del dispensador automático con Arduino. Se muestra cómo el Arduino UNO se conecta a los distintos componentes mediante una protoboard y cables jumper.
+
+- En la parte inferior aparecen los sensores utilizados en el proyecto: un sensor óptico de herradura, que detecta el paso de la moneda, y un sensor infrarrojo FC-51, que detecta la presencia de un objeto en la salida. A la derecha se encuentra el servomotor SG90, encargado de mover el mecanismo del dispensador cuando Arduino recibe la señal de los sensores.
+
+- En conjunto, el diagrama muestra la distribución de la alimentación, las señales y el control del sistema necesario para el funcionamiento del dispensador automático.
+
+ <p align="center">
+<img src="Diseño sin título.png" alt="Página Principal" width="700">
+  </p> 
   
+## Materiales utilizados
+* **Microcontrolador:** Arduino UNO (R3 o compatible).
+* **Actuador:** Micro servomotor SG90 (9g).
+* **Sensores:**
+    * Sensor óptico de herradura (para detección de monedas).
+    * Sensor infrarrojo de proximidad FC-51.
+* **Alimentación:** Batería de 9V (con adaptador Jack) o cable USB de 5V.
+* **Conectividad:** Cables Jumper (M-M / M-H) y protoboard de 400 puntos.
+  
+</details>
+</details>
+
+  <details>
+  <summary><h2>Arduino clase</h2></summary>
 <p align="center">
 <img src="images.jpg" alt="Mi banner" width="800" height="200">
   </p>
-  
+
   **2.1 ¿Qué es Arduino?**
 - Arduino es una placa electrónica con un microcontrolador que se puede programar para controlar luces motores sensores y otros dispositivos se utiliza junto con un programa en la computadora para escribir instrucciones y automatizar tareas siendo útil para aprender electrónica y crear proyectos interactivos
 
@@ -1407,10 +1437,10 @@ WebServer server(8080);
 server.on("/", handle_OnConnect);
 server.onNotFound(handle_NotFound);
 server.begin();
+</details>
 
 
 
-.
 
 
 
