@@ -728,7 +728,10 @@ Para nuestro proyecto, necesitamos guardar copias de los datos importantes de lo
 - **Documentación y archivos del proyecto**  
   
 
-- **Copias de seguridad generales**  
+- **Copias de seguridad generales**
+  
+- **Pfsense**
+  
 
   
 </details>
