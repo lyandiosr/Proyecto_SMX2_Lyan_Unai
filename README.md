@@ -854,6 +854,202 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
 ---
 <details>
   <summary><h2> Plan de contingencia</h2></summary>
+  
+## 1. DATOS GENERALES
+- **Nombre del proyecto:** Edutask
+- **Alumno(s):** Unai y Lyan
+- **Fecha:** 18/03/2026
+- **Versión del documento:** 1.0
+- **Descripción breve del sistema:**  
+Hemos creado una red con varios servidores y servicios para nuestro proyecto. Tenemos Pi-hole para DNS y DHCP, Apache y PHP para la parte web, MySQL para la base de datos, TrueNAS para el almacenamiento y las copias de seguridad, y pfSense para gestionar la red y la seguridad.
+
+---
+
+## 2. OBJETIVO DEL PLAN
+Este plan sirve para saber qué hacer si alguno de los servidores o servicios falla.  
+Con este documento queremos garantizar que el sistema pueda seguir funcionando o que, si se para algún servicio, se pueda recuperar lo antes posible.
+
+---
+
+## 3. ALCANCE
+Este plan cubre:
+- Pi-hole
+- Apache
+- PHP
+- MySQL
+- TrueNAS
+- pfSense
+
+También cubre los servicios principales del proyecto:
+- DNS
+- DHCP
+- Servidor web
+- Base de datos
+- Almacenamiento
+- Seguridad de red
+
+No incluye fallos externos del proveedor de Internet.
+
+---
+
+## 4. IDENTIFICACIÓN DE ACTIVOS
+
+| Activo | Tipo | Importancia |
+|--------|------|------------|
+| Pi-hole | Software | Alta |
+| Apache | Software | Alta |
+| PHP | Software | Alta |
+| MySQL | Software | Alta |
+| TrueNAS | Software | Alta |
+| pfSense | Software | Alta |
+
+---
+
+## 5. ANÁLISIS DE RIESGOS
+
+| Riesgo | Probabilidad | Impacto | Nivel de riesgo |
+|--------|-------------|---------|-----------------|
+| Caída de un servidor | Alta | Alta | Crítico |
+| Error de configuración | Media | Alta | Alto |
+| Fallo de red | Media | Alta | Alto |
+| Pérdida de datos | Media | Alta | Alto |
+| Error humano | Media | Media | Medio |
+| Ataque informático | Baja | Alta | Alto |
+
+---
+
+## 6. ESCENARIOS DE CONTINGENCIA
+
+- Caída del servidor Pi-hole
+- Caída del servidor web Apache
+- Fallo de PHP
+- Fallo del servidor MySQL
+- Fallo de TrueNAS
+- Fallo de pfSense
+- Error al cambiar configuraciones
+- Pérdida de acceso a la red
+- Pérdida de archivos o datos
+- Ataque o malware
+
+---
+
+## 7. PLAN DE RESPUESTA
+
+### Pi-hole (DNS y DHCP)
+Si el servidor Pi-hole falla, primero comprobaremos si la máquina virtual está encendida. Después revisaremos la red y miraremos si el sistema responde. Si hace falta reiniciaremos la máquina virtual y después comprobaremos la configuración DNS y DHCP. Si el problema sigue, restauraremos la configuración desde una copia de seguridad. Después haremos pruebas desde un cliente para ver si resuelve nombres y da IP correctamente.
+
+### Apache
+Si Apache falla, primero veremos si la máquina virtual está encendida y si se puede acceder a ella. Después comprobaremos el estado del servicio Apache. Si está parado, lo reiniciaremos. Luego revisaremos los archivos de configuración y los archivos de la página web. Si sigue sin funcionar, restauraremos la configuración y los archivos de la web desde la copia de seguridad y volveremos a probar desde el navegador.
+
+### PHP
+Si PHP falla, primero comprobaremos si Apache sigue funcionando. Después revisaremos la configuración de PHP y haremos una prueba con un archivo PHP desde el navegador. Si no funciona, revisaremos si la dirección está bien escrita y si el archivo está en la ruta correcta. Si el problema sigue, restauraremos la configuración de PHP desde la copia de seguridad.
+
+### MySQL
+Si MySQL falla, primero veremos si la máquina virtual está encendida y si el servicio está activo. Si está parado, lo reiniciaremos. Después revisaremos la configuración, el acceso de usuarios y la conexión al puerto 3306. Si el problema sigue, restauraremos la base de datos y la configuración desde la copia de seguridad. Después haremos pruebas para confirmar que la aplicación vuelve a conectarse.
+
+### TrueNAS
+Si TrueNAS falla, primero comprobaremos si la máquina virtual está encendida. Después revisaremos la red e intentaremos entrar al panel web. Si no responde, reiniciaremos la máquina virtual. También revisaremos los discos y las carpetas compartidas. Si hay pérdida de datos o fallos en el almacenamiento, restauraremos la información desde la última copia válida y probaremos el acceso desde otro equipo.
+
+### pfSense
+Si pfSense falla, primero comprobaremos si la máquina virtual está encendida. Después revisaremos las interfaces de red y la configuración de LAN y WAN. Si no responde, reiniciaremos la máquina. También revisaremos las reglas del firewall y la configuración de red. Si el fallo sigue, restauraremos una copia de seguridad de la configuración de pfSense y haremos pruebas desde un cliente para confirmar que vuelve a haber conexión.
+
+---
+
+## 8. PLAN DE RECUPERACIÓN
+Para volver a la normalidad, primero restauraremos los servicios afectados desde las copias de seguridad si hace falta. Después volveremos a configurar lo que se haya perdido o dañado y haremos pruebas para confirmar que todo funciona correctamente.
+
+- **RTO (tiempo máximo de recuperación):**
+  - Pi-hole: 30 minutos
+  - Apache: 30 minutos
+  - PHP: 30 minutos
+  - MySQL: 1 hora
+  - TrueNAS: 1 hora
+  - pfSense: 30 minutos
+
+- **RPO (pérdida de datos aceptable):**
+  - 1 día en los servicios principales
+  - Última copia disponible en configuraciones
+
+---
+
+## 9. COPIAS DE SEGURIDAD
+Las copias de seguridad de nuestro proyecto se guardarán en TrueNAS.  
+Haremos copias completas de forma semanal y, si es necesario, también antes de hacer cambios importantes.
+
+Necesitamos guardar:
+- **MySQL:** `/var/lib/mysql/`
+- **Apache:** `/etc/apache2/apache2.conf` y `/etc/apache2/sites-available/`
+- **PHP:** `/etc/php/`
+- **Pi-hole:** `/etc/pihole/` y `/etc/dnsmasq.d/`
+- **Servidor web:** `/var/www/html/`
+- **pfSense:** archivo de configuración exportado
+- **Documentación del proyecto:** según ubicación en la red o repositorio
+
+Estas copias se guardan en TrueNAS y se deben actualizar periódicamente para proteger los datos.
+
+---
+
+## 10. MEDIDAS PREVENTIVAS
+Para evitar problemas en el proyecto aplicaremos estas medidas:
+- Usar pfSense como firewall
+- Mantener los sistemas actualizados
+- Revisar permisos y accesos de usuarios
+- Hacer copias de seguridad periódicas
+- Comprobar el estado de los servicios
+- Documentar los cambios que hagamos
+
+---
+
+## 11. RESPONSABLES
+
+| Rol | Persona | Función |
+|-----|--------|---------|
+| Administrador | Unai | Gestionar el sistema y revisar configuraciones |
+| Soporte técnico | Lyan | Resolver incidencias y comprobar servicios |
+
+---
+
+## 12. PLAN DE COMUNICACIÓN
+Si hay un fallo, primero nos avisaremos entre nosotros para revisar el problema.  
+La comunicación se podrá hacer por teléfono, correo o mensajería.  
+Si el problema afecta a la red o a Internet, también se tendría que avisar al proveedor o al responsable correspondiente.
+
+El tiempo de respuesta debería ser lo antes posible cuando el servicio afectado sea importante.
+
+---
+
+## 13. PRUEBAS DEL PLAN
+Para comprobar que este plan funciona, se pueden hacer pruebas como:
+- Apagar una máquina virtual y comprobar la recuperación
+- Parar un servicio y volver a levantarlo
+- Restaurar archivos desde una copia de seguridad
+- Comprobar si la red vuelve a funcionar después de un fallo
+
+Después de cada prueba se revisarán los resultados para ver qué se puede mejorar.
+
+---
+
+## 14. MANTENIMIENTO DEL PLAN
+Este plan se revisará cada vez que hagamos cambios importantes en el proyecto o, como mínimo, una vez al mes.  
+Lo actualizaremos nosotros mismos si añadimos nuevos servicios o cambiamos configuraciones.
+
+---
+
+## 15. MEJORAS FUTURAS
+Más adelante podríamos mejorar este plan haciendo:
+- Copias de seguridad más frecuentes
+- Automatización de algunas recuperaciones
+- Más control de seguridad
+- Sistemas redundantes
+- Mejor monitorización de los servidores
+
+---
+
+## 16. CONCLUSIONES
+Este plan de contingencia es importante porque nos ayuda a saber qué hacer si falla algún servicio del proyecto. Gracias a este documento podemos actuar más rápido, recuperar datos y volver a poner en marcha los servicios sin perder tanto tiempo. También nos ayuda a tener el proyecto mejor organizado y más seguro.
+
+
+
 
 </details>
 
