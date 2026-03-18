@@ -853,6 +853,12 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
 
 ---
 <details>
+  <summary><h2> Plan de contingencia</h2></summary>
+
+</details>
+
+---
+<details>
   <summary><h2> Arduino</h2></summary>
 
   <details>
