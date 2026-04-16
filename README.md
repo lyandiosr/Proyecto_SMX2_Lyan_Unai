@@ -738,6 +738,16 @@ Para nuestro proyecto, necesitamos guardar copias de los datos importantes de lo
 
 <details>
   <summary><strong>IA Tutor Inteligente</strong></summary>
+
+  
+-  Para nuestro proyecto hemos creado una IA educativa utilizando Google AI Studio.
+
+-  Primero fuimos  a Google AI Studio y creamos una nueva IA. En ese momento le explicamos la idea de nuestro proyecto y qué queríamos que hiciera. A partir de esa información, la herramienta generó una base inicial de la IA adaptada a nuestras necesidades.
+
+-  Después de crearla, la fuimos entrenando poco a poco. Le añadimos más instrucciones, ejemplos y contexto relacionado con nuestro proyecto para que entendiera mejor cómo debía responder. Durante este proceso fuimos probando su funcionamiento y ajustando sus respuestas para que fueran más correctas y útiles.
+
+-  Una vez la IA ya estaba preparada, pasamos a la fase de implementación en nuestra página web. Para hacerlo, utilizamos la API que proporciona Google AI Studio.
+
 </details>
 </details>
 
