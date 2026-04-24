@@ -686,11 +686,35 @@ Entre sus características principales está que permite compartir archivos en l
 
 Para instalar TrueNAS hemos creado una máquina virtual en VirtualBox. En la configuración seleccionamos como sistema operativo **BSD de 64 bits**. También configuramos la red en **adaptador puente** para poder acceder a la máquina desde otros equipos de la red. Usamos la ISO **TrueNAS Core** para hacer la instalación.
 
-La máquina virtual la configuramos con **4 GB de RAM y tres discos duros**. Uno de los discos se usa para instalar el sistema operativo y los otros dos se dejan libres para poder crear más adelante un sistema de almacenamiento **RAID1**. Durante la instalación seleccionamos el disco donde se instala el sistema y elegimos el **modo de arranque BIOS**. Cuando termina la instalación reiniciamos la máquina virtual y quitamos la ISO.
+La máquina virtual la configuramos con **4 GB de RAM y tres discos duros**. Uno de los discos se usa para instalar el sistema operativo y los otros dos se dejan libres para poder crear más adelante un sistema de almacenamiento RAID1. Durante la instalación seleccionamos el disco donde se instala el sistema y elegimos el **modo de arranque BIOS**. Cuando termina la instalación reiniciamos la máquina virtual y quitamos la ISO.
 
 Después de reiniciar aparece el menú principal de TrueNAS. A partir de ese momento podemos entrar desde un navegador web usando la dirección de la máquina virtual para configurar el sistema y sus servicios.
 
 En nuestro proyecto utilizamos TrueNAS para guardar y compartir archivos dentro de la red, de forma que los equipos del proyecto puedan acceder a ellos cuando sea necesario.
+
+## Configuración de TrueNAS para copias de seguridad
+
+Primero accedimos a la interfaz web de TrueNAS desde el navegador utilizando la dirección IP del servidor. Una vez dentro, empezamos creando el almacenamiento principal.
+
+Entramos en el apartado de **Storage → Pools** y creamos un nuevo pool llamado `backup_pool`. Para ello seleccionamos el disco disponible y lo añadimos a los Data Vdevs.
+
+Después de crear el pool, creamos un dataset dentro de este para organizar mejor los archivos. Le pusimos el nombre `backups`, que será la carpeta donde se guardarán las copias de seguridad.
+
+A continuación, creamos un usuario específico para gestionar los backups. Entramos en **Accounts → Users** y añadimos un usuario llamado `backup` con su contraseña.
+
+Una vez creado el usuario, configuramos los permisos del dataset. Entramos en el dataset `backups` y modificamos los permisos para que el usuario `backup` fuera el propietario. Le dimos permisos de lectura, escritura y ejecución para que pudiera guardar correctamente las copias de seguridad. También ajustamos los permisos para que otros usuarios no pudieran acceder, mejorando así la seguridad.
+
+Después, configuramos una carpeta compartida utilizando el servicio SMB. Entramos en **Sharing → SMB**, añadimos un nuevo recurso compartido y seleccionamos la ruta `/mnt/backup_pool/backups`. Le dimos un nombre y guardamos la configuración. También activamos el servicio SMB para que la carpeta fuera accesible desde otras máquinas de la red.
+
+---
+
+## Incidencias
+
+Durante la configuración tuvimos algunos problemas:
+
+- Solo teníamos un disco disponible, por lo que no pudimos configurar RAID1 (mirror) para tener redundancia de datos.Tuvimos que añadir discos.
+- Al configurar los permisos, inicialmente dejamos el usuario `root`, lo cual no era correcto. Tuvimos que cambiarlo al usuario `backup` para que funcionara bien y fuera más seguro.
+
 
 
 ## Servicios del proyecto
