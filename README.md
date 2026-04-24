@@ -674,7 +674,31 @@ Nosotros hemos instalado el servidor MySQL en una máquina virtual con Ubuntu Se
 
 - Por eso se crea un usuario nuevo, en nuestro caso edutask, para que sea el que use la aplicación o la base de datos del proyecto. De esta forma se pueden controlar mejor los permisos y limitar lo que puede hacer cada usuario dentro del servidor.
 
-Gracias a esta configuración podremos usar MySQL en nuestro proyecto para guardar y gestionar datos de forma organizada.
+## Configuración del servidor MySQL
+
+Descargamos nuestra base de datos en formato `.sql` en nuestro ordenador. Una vez teníamos el archivo, lo pasamos desde nuestro PC a la máquina virtual donde está MySQL utilizando el comando `scp`, copiándolo a la carpeta personal del usuario.
+
+Para copiar el archivo utilizamos:
+scp edutask_database_COMPLETO.sql usuario@IP_DEL_SERVIDOR:/home/usuario/
+
+Una vez el archivo estaba dentro del servidor, accedimos a MySQL y creamos una base de datos nueva llamada `edutask`. Después salimos de MySQL y utilizamos el comando de importación para intentar cargar el contenido del archivo `.sql` dentro de la base de datos.
+
+Para importar la base de datos usamos:
+mysql -u root -p edutask < edutask_database_COMPLETO.sql
+
+Sin embargo, al comprobar las tablas con `SHOW TABLES;`, vimos que no aparecía nada, por lo que tuvimos que revisar el proceso.
+
+Para comprobar las tablas en el servidor hicimos:
+mysql -u root -p  
+USE edutask;  
+SHOW TABLES;
+
+Cuando ya teníamos la base de datos en el servidor, no se cargaba bien porque el archivo tenía varios errores. Tuvimos que corregir el archivo `.sql` y volver a importarlo con:
+mysql -u root -p edutask < edutask_database_COMPLETO.sql
+
+Después de repetir el proceso, ya pudimos ver todas las tablas correctamente usando:
+SHOW TABLES;
+
 </details>
 
 <details>
