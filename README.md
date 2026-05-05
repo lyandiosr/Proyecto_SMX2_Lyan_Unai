@@ -731,6 +731,20 @@ Una vez creado el usuario, configuramos los permisos del dataset. Entramos en el
 Después, configuramos una carpeta compartida utilizando el servicio SMB. Entramos en **Sharing → SMB**, añadimos un nuevo recurso compartido y seleccionamos la ruta `/mnt/backup_pool/backups`. Le dimos un nombre y guardamos la configuración. También activamos el servicio SMB para que la carpeta fuera accesible desde otras máquinas de la red.
 
 ---
+## Copias de seguridad con TrueNAS
+
+
+Primero conectamos nuestros servidores (Apache en Debian y MySQL en Ubuntu) con TrueNAS mediante una carpeta compartida (SMB). Para ello instalamos las herramientas necesarias, creamos la carpeta `/mnt/backups` y montamos el recurso compartido usando el usuario `backup`. Comprobamos que la conexión funcionaba creando archivos de prueba y verificando que aparecían en TrueNAS.
+
+Una vez comprobado, realizamos las copias de seguridad de cada servicio. En el servidor Apache hicimos una copia de los archivos de la web (`/var/www/html`) comprimiéndolos en un archivo `.tar.gz`. En el servidor MySQL utilizamos `mysqldump` para exportar la base de datos `edutask` a un archivo `.sql`. Ambos archivos se guardaron directamente en la carpeta compartida de TrueNAS.
+
+Después configuramos las copias para que se hicieran de forma automática utilizando `crontab`. Programamos la copia de MySQL a las 02:00 y la de Apache a las 03:00 todos los días. 
+
+Finalmente, comprobamos que todo funcionaba correctamente revisando que los archivos de backup se generaban y aparecían en TrueNAS.
+
+Gracias a esto, ahora nuestro sistema tiene copias de seguridad automáticas, lo que nos permite proteger la información y poder recuperarla en caso de fallo.
+
+---
 
 ## Incidencias
 
