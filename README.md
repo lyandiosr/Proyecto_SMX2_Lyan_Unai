@@ -827,6 +827,14 @@ Para nuestro proyecto, necesitamos guardar copias de los datos importantes de lo
  <details>
   <summary><strong> Pfsense </strong></summary>
 
+ En este proyecto, pfSense actúa como el centro de seguridad y de gestión de la red, controlando el tráfico entre Internet (WAN), nuestra red interna (LAN) y una zona separada para servicios públicos (DMZ). El objetivo principal es evitar que, si hay un problema en el servidor web Apache, este pueda afectar a los datos importantes que están en el servidor MySQL o en TrueNAS. Para ello, configuramos tres interfaces diferentes: la WAN para el acceso desde fuera, la LAN (192.168.135.0/24) para la red interna, y una DMZ creada en un adaptador solo-anfitrión (Host-Only) con el rango 192.168.20.0/24.
+
+Para permitir el acceso a la web desde el exterior, configuramos una redirección de puertos en la WAN, enviando todo el tráfico del puerto 80 a la IP del servidor Debian (192.168.20.10) que está en la DMZ. La seguridad se mejora con reglas en el firewall: una regla que permite solo la conexión desde la DMZ a la LAN por el puerto 3306 (MySQL), y otra regla que bloquea todo lo demás hacia la LAN. Así conseguimos que, aunque el servidor web sea accesible desde fuera, el resto de la red esté protegida y no sea accesible.
+
+Durante el despliegue tuvimos varias incidencias. La primera fue un error al usar una IP de tipo loopback (127.x.x.x) para la DMZ, lo que hacía que el tráfico no saliera correctamente. Lo solucionamos cambiando a un rango de IP privado normal (192.168.20.x). Otra incidencia fue que no respondían los comandos ping  ni las conexiones a la base de datos. Esto no era un fallo de red, sino que pfSense bloquea todo por defecto, por lo que tuvimos que crear reglas para permitir ese tráfico.
+
+Finalmente, comprobamos que todo funcionaba bien haciendo pruebas de red. Vimos que desde el equipo anfitrión se podía acceder a la web usando la IP de la WAN, pero que el servidor de la DMZ no podía acceder a servicios que no estaban permitidos en la LAN (como el panel de TrueNAS). Esta configuración es similar a la de un entorno real, donde separar la red y limitar los accesos es muy importante para la seguridad.
+
 
    
 </details>
