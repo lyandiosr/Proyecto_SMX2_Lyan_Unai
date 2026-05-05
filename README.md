@@ -632,7 +632,7 @@ Durante la configuración del servicio DHCP no hemos tenido ningún problema, ya
    <details>
   <summary><strong> Apache/PHP</strong></summary>
 
-Configuración del servidor web Apache 2 y PHP
+## Configuración del servidor web Apache 2 y PHP
 
 Apache 2 es un programa que sirve para crear un servidor web, es decir, para poder ver páginas web desde otros dispositivos de la red o desde Internet. PHP es un lenguaje que funciona junto con Apache y sirve para hacer páginas web que cambian según lo que haga el usuario o según la información que tenga el servidor. Gracias a Apache y PHP podemos crear y probar páginas y servicios para nuestro proyecto.
 
@@ -651,6 +651,19 @@ Gracias a esta instalación, ahora tenemos un servidor web con Apache 2 y PHP, l
 <img src="Captura de pantalla 2026-02-20 100005.png" alt="Diagrama de la red" width="700">
   </p>
 Durante la instalación hemos tenido un problema con PHP, porque después de terminar no se abría la página en el navegador y pensábamos que no funcionaba. Al final vimos que el problema no era de la instalación, sino que estábamos escribiendo mal la dirección en el navegador. Cuando pusimos la dirección correcta del servidor con el archivo de prueba, la página se abrió sin problemas y comprobamos que PHP funcionaba bien.
+
+## Conexión entre Apache y MySQL
+
+En nuestro proyecto hemos conectado el servidor Apache con el servidor MySQL para que la aplicación web pueda trabajar con la base de datos.
+
+Primero comprobamos que ambos servidores tenían conexión entre ellos dentro de la red. Después verificamos que el servidor MySQL estaba funcionando correctamente y que la base de datos `edutask` estaba creada y con sus tablas.
+
+A continuación, configuramos MySQL para permitir conexiones desde el servidor Apache. Para ello utilizamos el usuario que habíamos creado (`edutask`) y le dimos permisos para acceder a la base de datos desde otro equipo de la red.
+
+Después, en el servidor Apache, configuramos la conexión desde PHP hacia MySQL. Indicamos los datos necesarios: la IP del servidor MySQL, el nombre de la base de datos (`edutask`), el usuario (`edutask`) y la contraseña.
+
+Realizamos pruebas desde la web para comprobar que la conexión funcionaba correctamente. Al hacer consultas a la base de datos, vimos que se establecía la conexión sin errores y que se podían obtener datos.
+
 
 </details>
  <details>
