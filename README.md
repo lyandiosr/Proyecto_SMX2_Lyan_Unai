@@ -824,6 +824,12 @@ Para nuestro proyecto, necesitamos guardar copias de los datos importantes de lo
 -  Una vez la IA ya estaba preparada, pasamos a la fase de implementación en nuestra página web. Para hacerlo, utilizamos la API que proporciona Google AI Studio.
 
 </details>
+ <details>
+  <summary><strong> Pfsense </strong></summary>
+
+
+   
+</details>
 </details>
 
 
