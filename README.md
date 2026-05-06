@@ -761,12 +761,12 @@ Preparamos una carpeta en TrueNAS y le dimos permiso al pfSense para que pudiera
 
 En pfSense hicimos tres pasos importantes para que todo funcionara automáticamente:
 
-Creamos una carpeta de enlace: usamos el comando `mkdir -p /mnt/truenas_backup` para crear un sitio donde se guardarán los archivos del servidor.
+Creamos una carpeta de enlace: usamos el comando `mkdir -p /mnt/pfsense_backup` para crear un sitio donde se guardarán los archivos del servidor.
 
-Conectamos los equipos: usamos el comando `mount 192.168.135.45:/ruta/de/truenas /mnt/truenas_backup`. Con esto, pfSense ve la carpeta de TrueNAS como si fuera una carpeta propia. Para que esta conexión no se pierda al apagar el equipo, instalamos un paquete llamado Shellcmd, que repite este comando cada vez que el pfSense se inicia.
+Conectamos los equipos: usamos el comando `mount 192.168.135.45:/ruta/de/truenas /mnt/pfsense_backup`. Con esto, pfSense ve la carpeta de TrueNAS como si fuera una carpeta propia. Para que esta conexión no se pierda al apagar el equipo, instalamos un paquete llamado Shellcmd, que repite este comando cada vez que el pfSense se inicia.
 
 Programamos la copia: instalamos el paquete Cron para crear una tarea que se repite todos los días. El comando que usamos fue:  
-`cp /conf/config.xml /mnt/truenas_backup/config-$(date +%Y%m%d-%H%M).xml`.  
+`cp /conf/config.xml /mnt/pfsense_backup/config-$(date +%Y%m%d-%H%M).xml`.  
 Básicamente, copia la configuración actual y le añade la fecha y la hora al nombre para no sobrescribir las copias anteriores.
 
 Gracias a esto, ahora nuestro sistema tiene copias de seguridad automáticas, lo que nos permite proteger la información y poder recuperarla en caso de fallo.
