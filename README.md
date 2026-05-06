@@ -956,6 +956,13 @@ Gracias a esta estructura, la navegación resulta clara, intuitiva y fluida. Tan
 <details>
   
   <summary><h2> Conclusiones</h2></summary>
+  En este proyecto hemos conseguido montar todo un sistema desde cero usando varias máquinas virtuales. Hemos configurado diferentes servicios como el DNS con Pi-hole, el servidor web con Apache y PHP, la base de datos con MySQL, el almacenamiento con TrueNAS y la seguridad de red con pfSense. Gracias a todo esto hemos aprendido cómo funciona una red real y cómo se conectan todos los servicios entre sí.
+
+Nuestro objetivo principal era crear una página web tipo Classroom pero mejorada, más fácil de usar y más útil. Esta ha sido la parte más divertida del proyecto, ya que hemos podido ver cómo todo lo que hemos configurado antes servía para que la web funcionara correctamente. Las máquinas virtuales que hemos creado eran necesarias para poder montar todo el sistema que hay detrás de la web.
+
+También hemos configurado copias de seguridad automáticas para no perder información y hemos aplicado medidas de seguridad para proteger los datos. Durante el proceso hemos tenido varios errores y problemas, pero nos han ayudado a aprender y a entender mejor cómo funcionan las cosas.
+
+Este proyecto nos ha servido para aprender de forma práctica, trabajar en equipo y entender cómo se monta un entorno real. Ahora ya sabemos mocho mas  sobre redes, servidores y desarrollo web.
 </details>
 
 ---
