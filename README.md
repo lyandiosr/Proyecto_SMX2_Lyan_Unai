@@ -1279,9 +1279,7 @@ El mecanismo principal utiliza un micro servomotor para desplazar una unidad de 
 
 - En conjunto, el diagrama muestra la distribución de la alimentación, las señales y el control del sistema necesario para el funcionamiento del dispensador automático.
 
- <p align="center">
-<img src="Diseño sin título.png" alt="Página Principal" width="700">
-  </p> 
+ 
   
 ## Materiales utilizados
 * **Microcontrolador:** Arduino UNO (R3 o compatible).
@@ -1291,9 +1289,17 @@ El mecanismo principal utiliza un micro servomotor para desplazar una unidad de 
     * Sensor infrarrojo de proximidad FC-51.
 * **Alimentación:** Batería de 9V (con adaptador Jack) o cable USB de 5V.
 * **Conectividad:** Cables Jumper (M-M / M-H) y protoboard de 400 puntos.
+</details>
+
+<details>
+  <summary><h2>Videos yfotos </h2></summary>
+
+  <p align="center">
+<img src="IMG_0142.jpeg" alt="Página Principal" width="700">
+  </p> 
   
 </details>
-</details>
+
 
   <details>
   <summary><h2>Arduino clase</h2></summary>
